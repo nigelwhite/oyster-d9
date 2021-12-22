@@ -1,4 +1,4 @@
-uuid: 71126c61-4a47-4d96-a8e8-37c9fb9b3923
+uuid: caeb062d-6603-4076-9a1f-a1c71bbd72a3
 langcode: en
 status: true
 dependencies: {  }
@@ -152,6 +152,10 @@ process:
       source: field_theme
       process:
         target_id: tid
+  field_urgent:
+    -
+      plugin: get
+      source: field_urgent
   field_tag:
     -
       plugin: sub_process

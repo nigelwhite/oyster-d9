@@ -1,7 +1,10 @@
 uuid: 0011456b-7672-4e95-ac5b-09f2abb21082
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -11,5 +14,3 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'search content'
-  - 'view files'

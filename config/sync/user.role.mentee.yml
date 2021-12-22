@@ -1,7 +1,9 @@
 uuid: a49028dd-ee46-4fbf-b4f6-894c23bd562d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
 id: mentee
 label: mentee
 weight: 3
@@ -11,4 +13,3 @@ permissions:
   - 'edit own comments'
   - 'post comments'
   - 'skip comment approval'
-  - 'use text format filtered_html'

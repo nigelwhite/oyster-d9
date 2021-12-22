@@ -1,4 +1,4 @@
-uuid: 1d97da8e-d816-4b5f-943e-a59b1cd55362
+uuid: 6ce76f1a-4331-4994-912a-6c1b9888b25d
 langcode: en
 status: true
 dependencies: {  }
@@ -48,9 +48,13 @@ process:
     -
       plugin: get
       source: weight
+  skip_missing_permission_deprecation:
+    -
+      plugin: default_value
+      default_value: true
 destination:
   plugin: 'entity:user_role'
 migration_dependencies:
+  required: {  }
   optional:
     - upgrade_d7_filter_format
-  required: {  }

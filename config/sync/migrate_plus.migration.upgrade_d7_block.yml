@@ -1,4 +1,4 @@
-uuid: 9ae3f585-4d56-4616-908b-d09ef7629d77
+uuid: 77b495eb-8431-43e6-9f28-9181e16038d0
 langcode: en
 status: true
 dependencies: {  }
@@ -113,7 +113,7 @@ process:
 destination:
   plugin: 'entity:block'
 migration_dependencies:
+  required: {  }
   optional:
     - upgrade_d7_custom_block
     - upgrade_d7_user_role
-  required: {  }
