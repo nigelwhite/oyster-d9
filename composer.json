@@ -19,6 +19,7 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/bootstrap5": "^1.1",
         "drupal/coffee": "^1.2",
+        "drupal/config_split": "^1.7",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
