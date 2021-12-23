@@ -1,0 +1,16 @@
+uuid: 4256480b-f69f-44dd-a13c-62b750fde400
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: mentee
+label: mentee
+weight: 3
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
