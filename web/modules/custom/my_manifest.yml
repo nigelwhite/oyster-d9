@@ -1,5 +1,4 @@
 # migrations that run without errors
 
 # user
-- upgrade_d7_user
-- upgrade_d7_user_role
+- my_user_role
