@@ -1,4 +1,4 @@
-uuid: f897d80a-a565-40b9-93a7-2ed51d4f241a
+uuid: 73564a0c-aa29-4a97-9b2b-f299d3335feb
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.book.body
     - node.type.book
   module:
+    - path
     - text
 _core:
   default_config_hash: b_hvlXsOoKPjlyIXXp3Msda_pMWTEC4kFo61--akj0Y
@@ -27,6 +28,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,4 +1,4 @@
-uuid: ef6c075b-985f-42bc-9715-49d0d2450b85
+uuid: ad2e589a-2804-4a1b-b56a-f2ccc803a469
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: 3ofjdcJLEef1seICggqEtiNZmCpIxTF4925QB1PpiOY
+  default_config_hash: S_NN2ubd_NovTfgzbHVlZMmIJJQS-3h9h3inzbaFUMY
 id: comments_recent
 label: 'Recent comments'
 module: views
@@ -187,9 +187,10 @@ display:
           entity_field: cid
           plugin_id: field
           order: DESC
-          exposed: false
           expose:
+            label: ''
             field_identifier: cid
+          exposed: false
       filters:
         status:
           id: status

@@ -1,52 +1,11 @@
-uuid: 074a573f-e800-49d2-8ec5-ff49cae905f3
+uuid: d43eb824-163b-4dfe-9508-a339254d7bbc
 langcode: en
 status: true
-dependencies:
-  module:
-    - block
-    - coffee
-    - comment
-    - filter
-    - node
-    - system
-    - taxonomy
-    - toolbar
-    - views_ui
+dependencies: {  }
+_core:
+  default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
 id: administrator
-label: administrator
-weight: 2
-is_admin: null
-permissions:
-  - 'access administration pages'
-  - 'access coffee'
-  - 'access comments'
-  - 'access content'
-  - 'access content overview'
-  - 'access site in maintenance mode'
-  - 'access site reports'
-  - 'access toolbar'
-  - 'access user profiles'
-  - 'administer blocks'
-  - 'administer coffee'
-  - 'administer comments'
-  - 'administer content types'
-  - 'administer filters'
-  - 'administer menu'
-  - 'administer modules'
-  - 'administer nodes'
-  - 'administer permissions'
-  - 'administer site configuration'
-  - 'administer software updates'
-  - 'administer taxonomy'
-  - 'administer themes'
-  - 'administer users'
-  - 'administer views'
-  - 'bypass node access'
-  - 'cancel account'
-  - 'change own username'
-  - 'edit own comments'
-  - 'post comments'
-  - 'select account cancellation method'
-  - 'skip comment approval'
-  - 'view own unpublished content'
-  - 'view the administration theme'
+label: Administrator
+weight: 3
+is_admin: true
+permissions: {  }

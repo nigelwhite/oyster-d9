@@ -1,4 +1,4 @@
-uuid: ff276042-fde6-4f74-8fcc-8f9cebb5fd0f
+uuid: cc62bb41-e98d-4135-80e2-ee4d8dfebc8b
 langcode: en
 status: true
 dependencies: {  }
@@ -89,6 +89,7 @@ process:
         datestamp: datetime_timestamp
         file_mfw: file_generic
         filefield_widget: file_generic
+        list: list_default
   options/settings:
     -
       plugin: field_instance_widget_settings

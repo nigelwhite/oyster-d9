@@ -1,11 +1,11 @@
-uuid: b68222b9-36ee-42b2-acbf-62b8ba238722
+uuid: 77b5bb0b-ccbf-439f-b9a0-38306b631269
 langcode: en
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: GbPVHdpSCucZ1MunS3Lai6FtyVVfmP9rJHk1GZ73JY0
+  default_config_hash: njaZigMvB4ap21Fg_tQcJhWgYJCGNi49Z5rRL_N6RI0
 id: user_admin_people
 label: People
 module: user

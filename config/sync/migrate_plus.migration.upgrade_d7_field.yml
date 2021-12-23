@@ -1,4 +1,4 @@
-uuid: 628e5327-a95d-4149-98cd-a0e0a9acf5b3
+uuid: 4fa73a16-b807-4791-9b40-951b8e44ed0e
 langcode: en
 status: true
 dependencies: {  }
@@ -49,6 +49,8 @@ process:
           datetime: datetime
         file:
           file: file
+        list:
+          list: list
   cardinality:
     -
       plugin: get
