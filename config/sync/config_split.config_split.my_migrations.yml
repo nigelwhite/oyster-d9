@@ -1,0 +1,17 @@
+uuid: fe2b78be-9cdd-46ff-9086-42e20bef1f3a
+langcode: en
+status: true
+dependencies: {  }
+id: my_migrations
+label: 'My migrations'
+description: ''
+weight: 0
+folder: ../config/splits/my_migrations
+module: {  }
+theme: {  }
+blacklist:
+  - migrate_plus.migration.my_user_role
+  - migrate_plus.migration_group.my
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
