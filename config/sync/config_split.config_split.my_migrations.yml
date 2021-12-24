@@ -10,8 +10,14 @@ folder: ../config/splits/my_migrations
 module: {  }
 theme: {  }
 blacklist:
+  - migrate_plus.migration.my_taxonomy_term_civicrm
+  - migrate_plus.migration.my_taxonomy_term_d7
+  - migrate_plus.migration.my_taxonomy_term_d8
+  - migrate_plus.migration.my_taxonomy_term_errors
   - migrate_plus.migration.my_taxonomy_term_projects
+  - migrate_plus.migration.my_taxonomy_term_tags
   - migrate_plus.migration.my_taxonomy_term_tags2020
+  - migrate_plus.migration.my_taxonomy_term_theme
   - migrate_plus.migration.my_user
   - migrate_plus.migration.my_user_role
   - migrate_plus.migration_group.my
