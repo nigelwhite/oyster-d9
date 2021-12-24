@@ -27,7 +27,7 @@
         "drupal/migrate_manifest": "^3.0",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_tools": "5.x-dev@dev",
-        "drupal/migrate_upgrade": "^3.2",
+        "drupal/migrate_upgrade": "3.x-dev@dev",
         "drush/drush": "^10.4"
     },
     "conflict": {
