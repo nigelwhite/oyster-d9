@@ -1,24 +1,21 @@
-uuid: 73564a0c-aa29-4a97-9b2b-f299d3335feb
+uuid: f58d9c16-0695-413d-a683-2f39e32816a2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book.body
-    - field.field.node.book.field_tag
-    - node.type.book
+    - field.field.node.blog.body
+    - node.type.blog
   module:
     - path
     - text
-_core:
-  default_config_hash: b_hvlXsOoKPjlyIXXp3Msda_pMWTEC4kFo61--akj0Y
-id: node.book.default
+id: node.blog.default
 targetEntityType: node
-bundle: book
+bundle: blog
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 26
+    weight: 121
     region: content
     settings:
       rows: 9
@@ -31,16 +28,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_tag:
-    type: entity_reference_autocomplete
-    weight: 121
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
