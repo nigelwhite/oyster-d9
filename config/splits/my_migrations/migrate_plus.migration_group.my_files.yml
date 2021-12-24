@@ -1,0 +1,20 @@
+uuid: ba77c62a-ae93-464e-a3b5-fc8dea3800c0
+langcode: en
+status: true
+dependencies: {  }
+id: my_files
+label: 'My import from Drupal 7'
+description: 'connecting to remote host'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: drupal_7
+    database:
+      driver: mysql
+      username: tantamount
+      password: scrafinbo57
+      host: localhost
+      port: ''
+      database: oyster
+      prefix: null
