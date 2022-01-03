@@ -1,8 +1,8 @@
-uuid: 2e4d23a4-49cd-4e87-8d33-99df6a82f888
+uuid: 765450d5-7743-473c-8641-1933b2feae64
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d7_node_complete_feed
+id: upgrade_d7_node_complete_fish
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
 cck_plugin_method: null
@@ -10,10 +10,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Node complete (Feed)'
+label: 'Node complete (Fish)'
 source:
   plugin: d7_node_complete
-  node_type: feed
+  node_type: fish
 process:
   nid:
     -
@@ -72,14 +72,22 @@ process:
     -
       plugin: get
       source: source_langcode
-  comment_node_feed/0/status:
+  comment_node_fish/0/status:
     -
       plugin: get
       source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_impression:
+    -
+      plugin: get
+      source: field_impression
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: feed
+  default_bundle: fish
 migration_dependencies:
   required:
     - upgrade_d7_user
