@@ -1,7 +1,9 @@
-uuid: de50753d-d34d-4d95-8181-ae6cc20e7226
+uuid: 29203141-a07c-40ae-90e5-e69d6dbf9904
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: gCQHgge0sYUq4k6Bth62_G-KfwuSpe7ZJ4bbsBLo85M
 id: my
 label: 'My import from Drupal 7'
 description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
@@ -9,12 +11,4 @@ source_type: 'Drupal 7'
 module: null
 shared_configuration:
   source:
-    key: drupal_7
-    database:
-      driver: mysql
-      username: db
-      password: db
-      host: ddev-oyster-db
-      port: ''
-      database: db
-      prefix: null
+    key: migrate

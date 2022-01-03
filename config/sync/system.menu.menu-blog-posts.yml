@@ -1,8 +1,0 @@
-uuid: c3f0dff6-b7ca-492a-9f28-ab93bc930505
-langcode: en
-status: true
-dependencies: {  }
-id: menu-blog-posts
-label: 'Blog posts'
-description: ''
-locked: false

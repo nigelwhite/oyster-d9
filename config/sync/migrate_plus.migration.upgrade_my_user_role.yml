@@ -1,4 +1,4 @@
-uuid: 354cb5b5-bbd0-402c-be90-0c7a5e6fca5c
+uuid: 4ec6884d-a458-4a95-8fec-ba8922aa5a96
 langcode: en
 status: true
 dependencies: {  }
@@ -12,15 +12,7 @@ migration_tags:
 migration_group: migrate_drupal_7
 label: 'User roles'
 source:
-  key: drupal_7
-  database:
-    driver: mysql
-    username: db
-    password: db
-    host: ddev-oyster-db
-    port: ''
-    database: db
-    prefix: null
+  key: migrate
   plugin: d7_user_role
 process:
   id:

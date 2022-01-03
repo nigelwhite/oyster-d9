@@ -1,4 +1,4 @@
-uuid: d43eb824-163b-4dfe-9508-a339254d7bbc
+uuid: bc77057f-c541-4d9e-8807-330cf99d0254
 langcode: en
 status: true
 dependencies:
@@ -179,18 +179,6 @@ permissions:
   - 'flush caches'
   - 'generate features'
   - 'manage features'
-  - 'merge civicrm terms'
-  - 'merge d7 terms'
-  - 'merge d8 terms'
-  - 'merge errors terms'
-  - 'merge gtd terms'
-  - 'merge mentee terms'
-  - 'merge projects terms'
-  - 'merge questions terms'
-  - 'merge tags terms'
-  - 'merge tags2020 terms'
-  - 'merge terms'
-  - 'merge theme terms'
   - 'node-specific print configuration'
   - 'perform backup'
   - 'post comments'

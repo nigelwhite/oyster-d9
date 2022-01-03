@@ -1,10 +1,9 @@
-uuid: 73564a0c-aa29-4a97-9b2b-f299d3335feb
+uuid: 76363c9f-dd9a-4cf2-bbf7-5875b1545528
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.book.body
-    - field.field.node.book.field_tag
     - node.type.book
   module:
     - path
@@ -31,16 +30,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_tag:
-    type: entity_reference_autocomplete
-    weight: 121
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

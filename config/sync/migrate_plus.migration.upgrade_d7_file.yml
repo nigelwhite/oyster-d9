@@ -1,4 +1,4 @@
-uuid: 6a131070-5651-4dac-83a7-0a6121cea58a
+uuid: c5093e57-538b-4c36-b99f-fc9789a6f2fc
 langcode: en
 status: true
 dependencies: {  }
@@ -15,7 +15,7 @@ source:
   plugin: d7_file
   scheme: public
   constants:
-    source_base_path: /home/nigel/ddev/oyster/sites/default/files/
+    source_base_path: 'http://oyster-d9.ddev.site:82/'
 process:
   fid:
     -

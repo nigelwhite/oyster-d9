@@ -1,11 +1,10 @@
-uuid: af8ee253-0cf5-4729-b57c-5e1b1fdc1997
+uuid: 5be4d82a-b043-49c3-b4f0-e0243dbbfbbc
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.body
-    - field.field.node.book.field_tag
     - node.type.book
   module:
     - text
@@ -28,5 +27,4 @@ content:
   links:
     weight: 101
     region: content
-hidden:
-  field_tag: true
+hidden: {  }
