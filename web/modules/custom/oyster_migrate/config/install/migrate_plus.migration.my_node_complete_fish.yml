@@ -1,8 +1,7 @@
-uuid: 0475d2f9-07c2-43a4-bffb-b4947a12139c
 langcode: en
 status: true
 dependencies: {}
-id: my_node_complete_book
+id: my_node_complete_fish
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
 cck_plugin_method: null
@@ -11,10 +10,10 @@ migration_tags:
   - Content
   - my
 migration_group: my
-label: "Node complete (Book page)"
+label: "Node complete (Fish)"
 source:
   plugin: d7_node_complete
-  node_type: book
+  node_type: fish
 process:
   nid:
     - plugin: get
@@ -59,66 +58,19 @@ process:
   content_translation_source:
     - plugin: get
       source: source_langcode
-  comment_node_book/0/status:
+  comment_node_fish/0/status:
     - plugin: get
       source: comment
   body:
     - plugin: get
       source: body
-  field_d8:
-    - plugin: sub_process
-      source: field_d8
-      process:
-        target_id: tid
-  field_gtd:
-    - plugin: sub_process
-      source: field_gtd
-      process:
-        target_id: tid
-  field_project:
-    - plugin: sub_process
-      source: field_project
-      process:
-        target_id: tid
-  field_questions:
-    - plugin: sub_process
-      source: field_questions
-      process:
-        target_id: tid
-  field_d7:
-    - plugin: sub_process
-      source: field_d7
-      process:
-        target_id: tid
-  field_civicrm:
-    - plugin: sub_process
-      source: field_civicrm
-      process:
-        target_id: tid
-  field_other_tags:
-    - plugin: sub_process
-      source: field_other_tags
-      process:
-        target_id: tid
-  field_errors:
-    - plugin: sub_process
-      source: field_errors
-      process:
-        target_id: tid
-  field_theme:
-    - plugin: sub_process
-      source: field_theme
-      process:
-        target_id: tid
-  field_tag:
-    - plugin: sub_process
-      source: field_tag
-      process:
-        target_id: tid
+  field_impression:
+    - plugin: get
+      source: field_impression
 destination:
   plugin: "entity_complete:node"
   translations: true
-  default_bundle: book
+  default_bundle: fish
 migration_dependencies:
   required:
     - my_user
