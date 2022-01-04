@@ -1,0 +1,23 @@
+uuid: a1c87179-096a-461c-8236-29de79e2ee47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_urgent
+    - node.type.blog
+id: node.blog.field_urgent
+field_name: field_urgent
+entity_type: node
+bundle: blog
+label: Urgent
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Urgent
+  off_label: ' '
+field_type: boolean

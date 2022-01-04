@@ -1,0 +1,23 @@
+uuid: f69ef360-a143-48ed-a686-a9f239a3144f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_d8
+    - node.type.book
+id: node.book.field_d8
+field_name: field_d8
+entity_type: node
+bundle: book
+label: D8
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

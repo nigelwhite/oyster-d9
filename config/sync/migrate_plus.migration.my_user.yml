@@ -2,8 +2,6 @@ uuid: f07beded-02e5-46e0-8342-fe1e9932c17b
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: AQULvgztIqjqMe9k6DX8bxNe1zVHaBJ_L47aAclU_G8
 id: my_user
 class: Drupal\user\Plugin\migrate\User
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'User accounts'
 source:

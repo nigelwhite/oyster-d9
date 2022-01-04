@@ -1,0 +1,23 @@
+uuid: b2fcba62-4042-4d06-90a8-4c1de2203847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_civicrm
+    - node.type.blog
+id: node.blog.field_civicrm
+field_name: field_civicrm
+entity_type: node
+bundle: blog
+label: CiviCrm
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

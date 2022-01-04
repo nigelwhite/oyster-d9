@@ -1,0 +1,23 @@
+uuid: f859eb7c-9bf8-4b58-8aa5-bd38269e52bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tag
+    - node.type.book
+id: node.book.field_tag
+field_name: field_tag
+entity_type: node
+bundle: book
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

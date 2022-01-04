@@ -1,0 +1,19 @@
+uuid: 674263c8-ddc4-40f2-a1c6-8f545876f61b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_impression
+    - node.type.fish
+id: node.fish.field_impression
+field_name: field_impression
+entity_type: node
+bundle: fish
+label: impression
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

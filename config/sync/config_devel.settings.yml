@@ -1,0 +1,61 @@
+_core:
+  default_config_hash: W4OGMJ9g0nIliU6O4quijGqNLQuWFixbxzi1Fytx6lk
+auto_import:
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration_group.my.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_book.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_field_instance.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_field.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_file.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_menu_links.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_menu.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_node_complete_book.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_node_type.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_civicrm.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_d7.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_d8.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_errors.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_projects.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_tags.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_tags2020.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_taxonomy_term_theme.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_user_role.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate/config/install/migrate_plus.migration.my_user.yml
+    hash: ''
+auto_export: {  }

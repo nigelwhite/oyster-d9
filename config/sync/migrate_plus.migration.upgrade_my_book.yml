@@ -1,4 +1,4 @@
-uuid: 91564b73-3511-4bf4-a587-3e7cfc03748d
+uuid: 44143d80-12ba-462e-96a4-089519b8e639
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: migrate_drupal_7
 label: Books
 source:

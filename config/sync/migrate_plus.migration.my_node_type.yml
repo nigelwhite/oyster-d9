@@ -2,8 +2,6 @@ uuid: d55a3dd6-f95f-4d21-9d2f-ab1ce9c14bb3
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: qf1QgnRLVvuROULNCKp6RC58drpQsL-vBJYcE_yplM8
 id: my_node_type
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Configuration
+  - my
 migration_group: my
 label: 'Node type configuration'
 source:

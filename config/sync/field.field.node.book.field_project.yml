@@ -1,0 +1,23 @@
+uuid: 2b3a0e52-d111-494b-927c-96d527452ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project
+    - node.type.book
+id: node.book.field_project
+field_name: field_project
+entity_type: node
+bundle: book
+label: Project
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

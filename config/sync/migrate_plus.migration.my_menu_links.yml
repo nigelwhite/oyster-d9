@@ -2,8 +2,6 @@ uuid: 313fbb9e-9f23-42d4-acd4-d2d8c466ee49
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: EqQYl13hrCT3zNJ3ojxCCe-ngeckVaZhMF-9aq7lmwQ
 id: my_menu_links
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'Menu links'
 source:

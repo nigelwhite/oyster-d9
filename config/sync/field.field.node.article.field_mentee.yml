@@ -1,0 +1,25 @@
+uuid: da7226da-2235-46b8-9d77-bdc84511b2d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mentee
+    - node.type.article
+id: node.article.field_mentee
+field_name: field_mentee
+entity_type: node
+bundle: article
+label: Mentee
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '347'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

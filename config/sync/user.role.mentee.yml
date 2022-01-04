@@ -1,0 +1,19 @@
+uuid: a5365e3c-05e7-4290-8351-2a084ac9bf95
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - comment
+    - filter
+id: mentee
+label: mentee
+weight: 3
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format filtered_html'

@@ -1,13 +1,20 @@
-uuid: ed1179be-1daf-48e0-8486-e779e7825c7e
+uuid: 090f3c9e-e52e-41a9-a039-e0e015ee2808
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
 type: article
-description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts. Used for starting topic threads with mentee'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

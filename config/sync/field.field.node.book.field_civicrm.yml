@@ -1,0 +1,23 @@
+uuid: 265c38ed-72af-4386-b454-1a4540e8ced2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_civicrm
+    - node.type.book
+id: node.book.field_civicrm
+field_name: field_civicrm
+entity_type: node
+bundle: book
+label: CiviCrm
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

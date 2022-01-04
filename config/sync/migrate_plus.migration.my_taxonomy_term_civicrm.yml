@@ -2,8 +2,6 @@ uuid: 048e97e7-9ce8-48ce-8cf0-e034a0c5cb87
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: rdZrLNfXyCqtTMWW6XjjY7e8eKqI7kkbMkZ5Kg0X9y8
 id: my_taxonomy_term_civicrm
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'Taxonomy terms (CiviCrm)'
 source:

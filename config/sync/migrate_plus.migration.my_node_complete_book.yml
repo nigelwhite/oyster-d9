@@ -2,8 +2,6 @@ uuid: 0475d2f9-07c2-43a4-bffb-b4947a12139c
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: WvLo3d1kLtVcMo_Os5Vf6L-qnPvyaiRtGZwYc2NPL_w
 id: my_node_complete_book
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'Node complete (Book page)'
 source:

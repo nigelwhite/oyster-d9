@@ -2,8 +2,6 @@ uuid: 6835771d-2822-4d18-bde9-4bd84769be2e
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: ccHrsYXMjRzm_0B6MRge_B0ZV2as8ZiwFRbzauZUZJw
 id: my_taxonomy_term_d7
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -11,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'Taxonomy terms (D7)'
 source:

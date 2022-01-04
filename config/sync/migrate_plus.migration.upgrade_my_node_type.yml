@@ -1,4 +1,4 @@
-uuid: 1e00e55b-c4a8-417e-ab59-712b9816ed95
+uuid: e72ed5f7-2f3d-4230-b896-d95a5129dafa
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Configuration
+  - my
 migration_group: migrate_drupal_7
 label: 'Node type configuration'
 source:

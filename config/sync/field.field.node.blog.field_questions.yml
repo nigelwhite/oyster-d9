@@ -1,0 +1,23 @@
+uuid: c8d8cb46-8242-4951-975b-573fd7d8337f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_questions
+    - node.type.blog
+id: node.blog.field_questions
+field_name: field_questions
+entity_type: node
+bundle: blog
+label: Questions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

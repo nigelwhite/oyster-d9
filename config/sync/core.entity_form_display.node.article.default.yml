@@ -1,11 +1,14 @@
-uuid: b29dda68-45c1-487b-b931-969b74081f4b
+uuid: 4fcba6eb-648c-428f-a5bd-c202f2cf11fa
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_blog_post
+    - field.field.node.article.field_date
     - field.field.node.article.field_image
+    - field.field.node.article.field_mentee
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -106,4 +109,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_blog_post: true
+  field_date: true
+  field_mentee: true

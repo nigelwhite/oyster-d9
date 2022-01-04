@@ -1,4 +1,4 @@
-uuid: 75b5be21-b55a-4653-8081-f2763e88f37f
+uuid: 0a48ccf3-8543-4a37-a8d5-fcdf21b071b1
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: migrate_drupal_7
 label: 'Taxonomy terms (Projects)'
 source:
@@ -80,6 +81,7 @@ destination:
 migration_dependencies:
   required: {  }
   optional:
+    - upgrade_my_field_instance
     - upgrade_my_taxonomy_term_tags
     - upgrade_my_taxonomy_term_d7
     - upgrade_my_taxonomy_term_d8

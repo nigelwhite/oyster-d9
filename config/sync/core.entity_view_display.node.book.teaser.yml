@@ -1,10 +1,20 @@
-uuid: fd343e07-75f6-4c96-afe5-600c79517e49
+uuid: 24149309-8a0e-4013-bd53-02874d1f40e8
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.body
+    - field.field.node.book.field_civicrm
+    - field.field.node.book.field_d7
+    - field.field.node.book.field_d8
+    - field.field.node.book.field_errors
+    - field.field.node.book.field_gtd
+    - field.field.node.book.field_other_tags
+    - field.field.node.book.field_project
+    - field.field.node.book.field_questions
+    - field.field.node.book.field_tag
+    - field.field.node.book.field_theme
     - node.type.book
   module:
     - text
@@ -27,4 +37,14 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_civicrm: true
+  field_d7: true
+  field_d8: true
+  field_errors: true
+  field_gtd: true
+  field_other_tags: true
+  field_project: true
+  field_questions: true
+  field_tag: true
+  field_theme: true

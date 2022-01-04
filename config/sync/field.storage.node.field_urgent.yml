@@ -1,0 +1,18 @@
+uuid: 40e9ff7f-5008-471b-be6c-9f51d7988951
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_urgent
+field_name: field_urgent
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

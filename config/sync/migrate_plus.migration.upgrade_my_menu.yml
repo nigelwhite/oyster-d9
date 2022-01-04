@@ -1,4 +1,4 @@
-uuid: 571ffd63-2547-4ace-8494-55718e5f27af
+uuid: fe144200-ec09-403b-9a97-a4c754424826
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Configuration
+  - my
 migration_group: migrate_drupal_7
 label: Menus
 source:
