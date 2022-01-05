@@ -1,10 +1,11 @@
-uuid: 47e4feeb-0557-4650-8293-a095efcf319d
+uuid: f6593ed4-645a-40ad-98f5-5ea5a20913b8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_tags
     - node.type.article
+    - taxonomy.vocabulary.tags
 _core:
   default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
 id: node.article.field_tags
@@ -12,14 +13,17 @@ field_name: field_tags
 entity_type: node
 bundle: article
 label: Tags
-description: 'Enter a comma-separated list of words to describe your content.'
+description: 'Enter a comma-separated list. For example: Amsterdam, Mexico City, "Cleveland, Ohio"'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
+    target_bundles:
+      tags: tags
     sort:
       field: _none
+    auto_create: true
 field_type: entity_reference

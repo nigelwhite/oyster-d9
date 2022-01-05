@@ -1,7 +1,0 @@
-name: oyster_migrate
-type: module
-description: Custom migrations from Oyster D7 to Oyster D9
-core_version_requirement: ^8 || ^9
-package: Custom
-dependencies:
-  - migrate_plus

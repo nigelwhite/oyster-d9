@@ -1,7 +1,9 @@
-uuid: f07beded-02e5-46e0-8342-fe1e9932c17b
+uuid: c9550af2-50e2-4732-afd3-aba652f681f7
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: sJdCoQrIQgybIB2J0VfolyjOaH7_L_aQwET4y3CjMtU
 id: my_user
 class: Drupal\user\Plugin\migrate\User
 field_plugin_method: null
@@ -73,7 +75,7 @@ process:
   roles:
     -
       plugin: migration_lookup
-      migration: my_user_role
+      migration: upgrade_d7_user_role
       source: roles
   user_picture:
     -
@@ -82,16 +84,16 @@ process:
       default_value: null
     -
       plugin: migration_lookup
-      migration: my_file
+      migration: upgrade_d7_file
 destination:
   plugin: 'entity:user'
 migration_dependencies:
   required:
-    - my_user_role
+    - upgrade_d7_user_role
   optional:
-    - my_field_instance
-    - my_file
+    - upgrade_d7_field_instance
+    - upgrade_d7_file
     - upgrade_user_picture_field_instance
     - upgrade_user_picture_entity_display
     - upgrade_user_picture_entity_form_display
-    - my_user_role
+    - upgrade_d7_user_role

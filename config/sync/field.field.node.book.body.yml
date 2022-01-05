@@ -1,4 +1,4 @@
-uuid: a7c6bb81-58ac-4a5f-8fe4-8758734de638
+uuid: c07c43fc-c231-44e2-a65f-96c468548930
 langcode: en
 status: true
 dependencies:
@@ -16,7 +16,7 @@ bundle: book
 label: Body
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

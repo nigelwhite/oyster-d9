@@ -1,4 +1,4 @@
-uuid: b139f876-f952-4c15-9b58-d9d073a46f01
+uuid: 4b78c25d-9d49-4ab6-858c-c862adb6ab40
 langcode: en
 status: true
 dependencies: {  }
@@ -74,7 +74,7 @@ process:
   roles:
     -
       plugin: migration_lookup
-      migration: upgrade_my_user_role
+      migration: {  }
       source: roles
   user_picture:
     -
@@ -83,13 +83,9 @@ process:
       default_value: null
     -
       plugin: migration_lookup
-      migration: upgrade_my_file
+      migration: {  }
 destination:
   plugin: 'entity:user'
 migration_dependencies:
-  required:
-    - upgrade_my_user_role
-  optional:
-    - upgrade_my_field_instance
-    - upgrade_my_file
-    - upgrade_my_user_role
+  required: {  }
+  optional: {  }

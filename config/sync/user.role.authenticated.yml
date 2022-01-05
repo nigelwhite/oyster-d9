@@ -1,25 +1,28 @@
-uuid: 00a675cf-d8ac-485a-8dcb-c81a129ead7e
+uuid: dc6c9776-6640-447a-a6ad-61a94993ca5e
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.filtered_html
+    - filter.format.basic_html
   module:
     - comment
+    - contact
     - filter
     - search
+    - shortcut
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'authenticated user'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use media wysiwyg'
-  - 'use text format filtered_html'
-  - 'view files'
+  - 'use text format basic_html'

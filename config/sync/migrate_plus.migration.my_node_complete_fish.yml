@@ -1,9 +1,9 @@
-uuid: 386ce443-714c-4d41-9613-19b41fce0f55
+uuid: 6232efb7-f69f-4aa2-8214-ef27d49f1435
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: sqs8_Obr3FmerDItPZ0EAzrdQQiMDz884Epnk7Ht2UI
+  default_config_hash: gPA2wBkRKMmXtZm6sjNPsTZBWB0ckhi-_aaErc7m-zs
 id: my_node_complete_fish
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
@@ -11,6 +11,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: my
 label: 'Node complete (Fish)'
 source:
@@ -92,8 +93,7 @@ destination:
   default_bundle: fish
 migration_dependencies:
   required:
-    - my_user
-    - my_node_type
-  optional:
-    - my_field_instance
-    - my_comment_field_instance
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_d7_field_instance
+  optional: {  }

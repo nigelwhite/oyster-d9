@@ -4,5 +4,5 @@ allowed_types:
   - book
 block:
   navigation:
-    mode: 'book pages'
+    mode: 'all pages'
 child_type: book

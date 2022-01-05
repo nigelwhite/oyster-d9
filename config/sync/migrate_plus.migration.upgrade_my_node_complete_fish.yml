@@ -1,4 +1,4 @@
-uuid: 2ec6066f-c77e-4122-b6bd-49625dceabb2
+uuid: be2d1b5d-a070-48fe-b790-dd0736caa537
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,7 @@ cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
 migration_group: migrate_drupal_7
 label: 'Node complete (Fish)'
 source:
@@ -90,8 +91,5 @@ destination:
   translations: true
   default_bundle: fish
 migration_dependencies:
-  required:
-    - upgrade_my_user
-    - upgrade_my_node_type
-  optional:
-    - upgrade_my_field_instance
+  required: {  }
+  optional: {  }

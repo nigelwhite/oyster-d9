@@ -1,79 +1,96 @@
-uuid: d4437271-bea2-4e33-8800-417c5d6f23cb
+uuid: f6eee2e7-4ec9-4bc9-9727-eda322211575
 langcode: en
 status: true
-dependencies: {}
+dependencies: {  }
 id: upgrade_d7_node_complete_fish
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - "Drupal 7"
+  - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: "Node complete (Fish)"
+label: 'Node complete (Fish)'
 source:
   plugin: d7_node_complete
   node_type: fish
 process:
   nid:
-    - plugin: get
+    -
+      plugin: get
       source: tnid
   vid:
-    - plugin: get
+    -
+      plugin: get
       source: vid
   langcode:
-    - plugin: default_value
+    -
+      plugin: default_value
       source: language
       default_value: und
   title:
-    - plugin: get
+    -
+      plugin: get
       source: title
   uid:
-    - plugin: get
+    -
+      plugin: get
       source: node_uid
   status:
-    - plugin: get
+    -
+      plugin: get
       source: status
   created:
-    - plugin: get
+    -
+      plugin: get
       source: created
   changed:
-    - plugin: get
+    -
+      plugin: get
       source: timestamp
   promote:
-    - plugin: get
+    -
+      plugin: get
       source: promote
   sticky:
-    - plugin: get
+    -
+      plugin: get
       source: sticky
   revision_uid:
-    - plugin: get
+    -
+      plugin: get
       source: revision_uid
   revision_log:
-    - plugin: get
+    -
+      plugin: get
       source: log
   revision_timestamp:
-    - plugin: get
+    -
+      plugin: get
       source: timestamp
   content_translation_source:
-    - plugin: get
+    -
+      plugin: get
       source: source_langcode
   comment_node_fish/0/status:
-    - plugin: get
+    -
+      plugin: get
       source: comment
   body:
-    - plugin: get
+    -
+      plugin: get
       source: body
   field_impression:
-    - plugin: get
+    -
+      plugin: get
       source: field_impression
 destination:
-  plugin: "entity_complete:node"
+  plugin: 'entity_complete:node'
   translations: true
   default_bundle: fish
 migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
+  optional:
     - upgrade_d7_field_instance
-  optional: []
