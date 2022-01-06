@@ -1,9 +1,7 @@
-uuid: 6232efb7-f69f-4aa2-8214-ef27d49f1435
+uuid: 32490126-2d25-4d0c-a143-09cddde0ac85
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: gPA2wBkRKMmXtZm6sjNPsTZBWB0ckhi-_aaErc7m-zs
 id: my_node_complete_fish
 class: Drupal\node\Plugin\migrate\D7NodeTranslation
 field_plugin_method: null

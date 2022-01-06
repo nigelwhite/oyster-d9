@@ -1,0 +1,76 @@
+uuid: 6460eb86-cf25-4551-9dc9-7ee42abbea2d
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_my_taxonomy_term_tags2020
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+  - my
+  - vocab
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Tags)'
+source:
+  key: migrate
+  plugin: d7_taxonomy_term
+  bundle: tags2020
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: {  }
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: {  }
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: tags
+migration_dependencies:
+  required: {  }
+  optional: {  }

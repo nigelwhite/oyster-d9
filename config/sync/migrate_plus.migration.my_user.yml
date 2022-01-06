@@ -1,9 +1,7 @@
-uuid: c9550af2-50e2-4732-afd3-aba652f681f7
+uuid: 471c5139-4be5-4945-aa86-9c905a80acb2
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: sJdCoQrIQgybIB2J0VfolyjOaH7_L_aQwET4y3CjMtU
 id: my_user
 class: Drupal\user\Plugin\migrate\User
 field_plugin_method: null
