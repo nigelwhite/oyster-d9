@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da47e22f976d987a540111c629f25cd1",
+    "content-hash": "c3b7a1aad38a08ef2c6751c9ecf1a9f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1660,16 +1660,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.0",
+            "version": "9.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "1e1bf0e841e11029b21775dd125332d7ffd6fb47"
+                "reference": "6c9ba6b6314550e7efb8f5f4e2a40f54cfd6aee1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/1e1bf0e841e11029b21775dd125332d7ffd6fb47",
-                "reference": "1e1bf0e841e11029b21775dd125332d7ffd6fb47",
+                "url": "https://api.github.com/repos/drupal/core/zipball/6c9ba6b6314550e7efb8f5f4e2a40f54cfd6aee1",
+                "reference": "6c9ba6b6314550e7efb8f5f4e2a40f54cfd6aee1",
                 "shasum": ""
             },
             "require": {
@@ -1911,9 +1911,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.0"
+                "source": "https://github.com/drupal/core/tree/9.3.2"
             },
-            "time": "2021-12-08T22:09:38+00:00"
+            "time": "2022-01-05T02:55:30+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -2008,16 +2008,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.0",
+            "version": "9.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "d65aaa36a8cab54332787a20676f81928f675bb3"
+                "reference": "9f570d6bf6e568b8c2deab02349a11fad3d1e272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/d65aaa36a8cab54332787a20676f81928f675bb3",
-                "reference": "d65aaa36a8cab54332787a20676f81928f675bb3",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/9f570d6bf6e568b8c2deab02349a11fad3d1e272",
+                "reference": "9f570d6bf6e568b8c2deab02349a11fad3d1e272",
                 "shasum": ""
             },
             "require": {
@@ -2026,7 +2026,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.0",
+                "drupal/core": "9.3.2",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
@@ -2088,9 +2088,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.3.0"
+                "source": "https://github.com/drupal/core-recommended/tree/9.3.2"
             },
-            "time": "2021-12-08T22:09:38+00:00"
+            "time": "2022-01-05T02:55:30+00:00"
         },
         {
             "name": "drupal/field_group",
@@ -2218,25 +2218,25 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.1"
+                "reference": "8.x-5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.1.zip",
-                "reference": "8.x-5.1",
-                "shasum": "1257427ab0c64459c3c1e42bb2a98d3114b77163"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.2.zip",
+                "reference": "8.x-5.2",
+                "shasum": "03ae34c362ccfacc4ae95b58469b25522e0ffb68"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
-                "php": ">=7.1"
+                "drupal/core": "^9.1"
             },
             "require-dev": {
                 "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*"
+                "drupal/migrate_example_setup": "*",
+                "drush/drush": "^10"
             },
             "suggest": {
                 "ext-soap": "*",
@@ -2245,11 +2245,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.1",
-                    "datestamp": "1588261060",
+                    "version": "8.x-5.2",
+                    "datestamp": "1640379296",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
                     }
                 }
             },
@@ -2267,6 +2272,10 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Enhancements to core migration support.",
@@ -5649,7 +5658,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -5705,7 +5714,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -5725,16 +5734,16 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010"
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fba8933c384d6476ab14fb7b8526e5287ca7e010",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/cc5db0e22b3cb4111010e48785a97f670b350ca5",
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5",
                 "shasum": ""
             },
             "require": {
@@ -5784,7 +5793,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -5800,7 +5809,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-06-05T21:20:04+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
