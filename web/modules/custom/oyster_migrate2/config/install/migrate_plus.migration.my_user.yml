@@ -9,6 +9,7 @@ migration_tags:
   - "Drupal 7"
   - Content
   - my
+  - user
 migration_group: my
 label: "User accounts"
 source:
@@ -70,7 +71,7 @@ destination:
   plugin: "entity:user"
 migration_dependencies:
   required:
-    - upgrade_d7_user_role
+    - my_user_role
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_file
