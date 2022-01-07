@@ -9,6 +9,7 @@ migration_tags:
   - "Drupal 7"
   - Content
   - my
+  - menu
 migration_group: my
 label: "Menu links"
 source:
@@ -38,7 +39,7 @@ process:
       source: description
   menu_name:
     - plugin: migration_lookup
-      migration: upgrade_d7_menu
+      migration: my_menu
       source: menu_name
     - plugin: skip_on_empty
       method: row
@@ -91,7 +92,7 @@ destination:
   no_stub: true
 migration_dependencies:
   required:
-    - my_d7_menu
+    - my_menu
   optional:
     #    - upgrade_d7_node_complete_article
     - my_node_complete_blog
@@ -102,4 +103,4 @@ migration_dependencies:
     #    - upgrade_d7_node_complete_image
     #    - upgrade_d7_node_complete_page
     #    - upgrade_d7_node_complete_panel
-    - my_d7_menu
+    - my_menu
