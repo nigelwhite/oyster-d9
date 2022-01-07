@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {}
-id: my_taxonomy_term_tags2020
+id: my_taxonomy_term_projects
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -11,10 +11,10 @@ migration_tags:
   - my
   - vocab
 migration_group: my
-label: "Taxonomy terms (Tags)"
+label: "Taxonomy terms (Projects)"
 source:
   plugin: d7_taxonomy_term
-  bundle: tags2020
+  bundle: projects
 process:
   tid:
     - plugin: get

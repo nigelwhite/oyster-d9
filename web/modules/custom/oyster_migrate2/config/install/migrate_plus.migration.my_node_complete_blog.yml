@@ -139,7 +139,7 @@ destination:
   default_bundle: blog
 migration_dependencies:
   required:
-    - my_d7_user
-    - my_d7_node_type
+    - my_user
+    - my_node_type
   optional:
-    - my_d7_field_instance
+    - my_field_instance

@@ -15,7 +15,7 @@ use Drupal\user\Plugin\migrate\source\d7\User as D7User;
  *
  * @MigrateSource(
  *   id = "custom_d7_user",
-     source_module = "user"
+ *   source_module = "user"
  * )
  */
 class User extends D7User {
