@@ -17,8 +17,16 @@ source:
     preview: 1
 process:
   type:
-    - plugin: get
+    - plugin: skip_on_value
       source: type
+      not_equals: true
+      value:
+        - blog
+        - book
+        - fish
+        - article
+        - page
+      method: row
   name:
     - plugin: get
       source: name

@@ -17,8 +17,16 @@ source:
     status: true
 process:
   type:
-    - plugin: process_field
+    - plugin: skip_on_value
       source: type
+      not_equals: true
+      menthod: row
+      default_value:
+        - field_date
+        - field_blog_post
+        - field_tags
+        - field_impression
+    - plugin: process_field
       method: getFieldType
   entity_type:
     - plugin: get
@@ -80,4 +88,4 @@ migration_dependencies:
     - my_field
   optional:
     - my_node_type
-    - my_d7_taxonomy_vocabulary
+    - my_taxonomy_vocabulary
