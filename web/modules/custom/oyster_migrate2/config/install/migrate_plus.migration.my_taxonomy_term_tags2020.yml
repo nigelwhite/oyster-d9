@@ -21,7 +21,7 @@ process:
       source: tid
   vid:
     - plugin: migration_lookup
-      migration: upgrade_d7_taxonomy_vocabulary
+      migration: my_taxonomy_vocabulary
       source: vid
   name:
     - plugin: get
@@ -41,17 +41,17 @@ process:
       source: parent
     - plugin: migration_lookup
       migration:
-        - upgrade_d7_taxonomy_term_tags
-        - upgrade_d7_taxonomy_term_d7
-        - upgrade_d7_taxonomy_term_d8
-        - upgrade_d7_taxonomy_term_projects
-        - upgrade_d7_taxonomy_term_civicrm
-        - upgrade_d7_taxonomy_term_questions
-        - upgrade_d7_taxonomy_term_gtd
-        - upgrade_d7_taxonomy_term_errors
-        - upgrade_d7_taxonomy_term_theme
-        - upgrade_d7_taxonomy_term_mentee
-        - upgrade_d7_taxonomy_term_tags2020
+        - my_taxonomy_term_tags
+        - my_taxonomy_term_d7
+        - my_taxonomy_term_d8
+        - my_taxonomy_term_projects
+        - my_taxonomy_term_civicrm
+        - my_taxonomy_term_questions
+        - my_taxonomy_term_gtd
+        - my_taxonomy_term_errors
+        - my_taxonomy_term_theme
+        - my_taxonomy_term_mentee
+        - my_taxonomy_term_tags2020
   parent:
     - plugin: default_value
       default_value: 0
@@ -72,5 +72,5 @@ migration_dependencies:
   required:
     - my_taxonomy_vocabulary
   optional:
-    - upgrade_d7_field_instance
-    - upgrade_d7_taxonomy_vocabulary
+    - my_field_instance
+    - my_taxonomy_vocabulary

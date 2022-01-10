@@ -16,8 +16,12 @@ source:
   plugin: d7_taxonomy_vocabulary
 process:
   vid:
-    - plugin: make_unique_entity_field
+    - plugin: skip_on_value
+      not_equals: true
       source: machine_name
+      method: row
+      value: tags
+    - plugin: make_unique_entity_field
       entity_type: taxonomy_vocabulary
       field: vid
       length: 30
