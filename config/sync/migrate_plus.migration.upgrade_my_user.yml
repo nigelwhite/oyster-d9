@@ -1,4 +1,4 @@
-uuid: 98e483c3-fa06-47bc-b81c-76828c9bf6ec
+uuid: fcd5d099-0671-409f-9482-ba2554f47692
 langcode: en
 status: true
 dependencies: {  }
@@ -10,6 +10,7 @@ migration_tags:
   - 'Drupal 7'
   - Content
   - my
+  - user
 migration_group: migrate_drupal_7
 label: 'User accounts'
 source:
@@ -74,7 +75,7 @@ process:
   roles:
     -
       plugin: migration_lookup
-      migration: {  }
+      migration: upgrade_my_user_role
       source: roles
   user_picture:
     -
@@ -87,5 +88,7 @@ process:
 destination:
   plugin: 'entity:user'
 migration_dependencies:
-  required: {  }
-  optional: {  }
+  required:
+    - upgrade_my_user_role
+  optional:
+    - upgrade_my_user_role

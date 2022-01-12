@@ -1,4 +1,4 @@
-uuid: cb11611b-df0e-4ee2-9bcd-234f82a4978a
+uuid: e7770481-6f74-4baa-a7d4-ff24dbb58c50
 langcode: en
 status: true
 dependencies: {  }
@@ -19,8 +19,13 @@ source:
 process:
   vid:
     -
-      plugin: make_unique_entity_field
+      plugin: skip_on_value
+      not_equals: true
       source: machine_name
+      method: row
+      value: tags
+    -
+      plugin: make_unique_entity_field
       entity_type: taxonomy_vocabulary
       field: vid
       length: 30

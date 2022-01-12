@@ -1,12 +1,12 @@
-uuid: 12384db8-68da-4008-918f-019d6623d0b9
+uuid: 5d6c76f4-b2e7-4bc1-bdc0-208e68783c54
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
+    - field.field.node.article.field_blog_post
+    - field.field.node.article.field_date
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -23,6 +23,6 @@ content:
     region: content
 hidden:
   body: true
-  comment: true
-  field_image: true
+  field_blog_post: true
+  field_date: true
   field_tags: true

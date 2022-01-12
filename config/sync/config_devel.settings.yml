@@ -5,7 +5,37 @@ auto_import:
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration_group.my.yml
     hash: ''
   -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_book.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_field_instance.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_field.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_file.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu_links.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_complete_article.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_complete_blog.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_complete_book.yml
+    hash: ''
+  -
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_complete_fish.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_type.yml
     hash: ''
   -
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_taxonomy_term_civicrm.yml
@@ -33,6 +63,9 @@ auto_import:
     hash: ''
   -
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_taxonomy_vocabulary.yml
+    hash: ''
+  -
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_user_role.yml
     hash: ''
   -
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_user.yml

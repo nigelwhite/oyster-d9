@@ -1,0 +1,23 @@
+uuid: 6bd3b1b6-e0ad-4dd7-b096-69329bab92ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.fish
+  module:
+    - text
+id: node.fish.body
+field_name: body
+entity_type: node
+bundle: fish
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

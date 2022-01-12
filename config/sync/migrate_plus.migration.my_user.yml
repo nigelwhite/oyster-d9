@@ -1,4 +1,4 @@
-uuid: 471c5139-4be5-4945-aa86-9c905a80acb2
+uuid: 1461021e-6801-4f11-8f1a-67cedf0736c1
 langcode: en
 status: true
 dependencies: {  }
@@ -10,6 +10,7 @@ migration_tags:
   - 'Drupal 7'
   - Content
   - my
+  - user
 migration_group: my
 label: 'User accounts'
 source:
@@ -73,7 +74,7 @@ process:
   roles:
     -
       plugin: migration_lookup
-      migration: upgrade_d7_user_role
+      migration: my_user_role
       source: roles
   user_picture:
     -
@@ -87,7 +88,7 @@ destination:
   plugin: 'entity:user'
 migration_dependencies:
   required:
-    - upgrade_d7_user_role
+    - my_user_role
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_file

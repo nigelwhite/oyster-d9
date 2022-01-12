@@ -1,0 +1,14 @@
+uuid: 596c942e-b974-4cf2-a8a9-fc0fea378c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mentee
+  module:
+    - user
+id: user_add_role_action.mentee
+label: 'Add the mentee role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mentee

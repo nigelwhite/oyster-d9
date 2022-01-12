@@ -80,49 +80,57 @@ process:
         target_id: fid
         display: display
         description: description
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_d7
-  #     process:
-  #       target_id: tid
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_other_tags
-  #     process:
-  #       target_id: tid
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_d8
-  #     process:
-  #       target_id: tid
-  field_tags:
+  field_d7_temp:
+    - plugin: sub_process
+      source: field_d7
+      process:
+        target_id: tid
+  field_other_tags_temp:
+    - plugin: sub_process
+      source: field_other_tags
+      process:
+        target_id: tid
+  field_d8_temp:
+    - plugin: sub_process
+      source: field_d8
+      process:
+        target_id: tid
+  field_project_temp:
     - plugin: sub_process
       source: field_project
       process:
         target_id: tid
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_civicrm
-  #     process:
-  #       target_id: tid
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_errors
-  #     process:
-  #       target_id: tid
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_theme
-  #     process:
-  #       target_id: tid
-  # field_tags:
-  #   - plugin: get
-  #     source: field_urgent
-  # field_tags:
-  #   - plugin: sub_process
-  #     source: field_tag
-  #     process:
-  #       target_id: tid
+  field_civicrm_temp:
+    - plugin: sub_process
+      source: field_civicrm
+      process:
+        target_id: tid
+  field_errors_temp:
+    - plugin: sub_process
+      source: field_errors
+      process:
+        target_id: tid
+  field_theme_temp:
+    - plugin: sub_process
+      source: field_theme
+      process:
+        target_id: tid
+  field_tag_temp:
+    - plugin: sub_process
+      source: field_tag
+      process:
+        target_id: tid
+  field_tags:
+    - plugin: merge
+      source:
+        - "@field_tag_temp"
+        - "@field_project_temp"
+        - "@field_d7_temp"
+        - "@field_other_tags_temp"
+        - "@field_d8_temp"
+        - "@field_civicrm_temp"
+        - "@field_errors_temp"
+        - "@field_theme_temp"
 destination:
   plugin: "entity_complete:node"
   translations: true
@@ -131,5 +139,4 @@ migration_dependencies:
   required:
     - my_d7_user
     - my_d7_node_type
-  optional:
-    - my_d7_field_instance
+  optional: []

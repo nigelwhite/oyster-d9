@@ -1,4 +1,4 @@
-uuid: 32490126-2d25-4d0c-a143-09cddde0ac85
+uuid: 4f3ac312-c64b-43a1-9191-8339094a336d
 langcode: en
 status: true
 dependencies: {  }
@@ -91,7 +91,7 @@ destination:
   default_bundle: fish
 migration_dependencies:
   required:
-    - upgrade_d7_user
-    - upgrade_d7_node_type
-    - upgrade_d7_field_instance
+    - my_d7_user
+    - my_node_type
+    - my_field_instance
   optional: {  }

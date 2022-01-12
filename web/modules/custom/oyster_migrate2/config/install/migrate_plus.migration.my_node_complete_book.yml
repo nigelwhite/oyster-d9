@@ -122,5 +122,4 @@ migration_dependencies:
   required:
     - my_d7_user
     - my_d7_node_type
-  optional:
-    - my_field_instance
+  optional: []

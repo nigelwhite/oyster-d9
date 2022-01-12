@@ -1,4 +1,4 @@
-uuid: 039d130d-3d4f-4c80-8613-e47d67a2686e
+uuid: 72ce9d2a-381b-4858-a722-9cf586c916c2
 langcode: en
 status: true
 dependencies: {  }
@@ -55,6 +55,10 @@ process:
     -
       plugin: get
       source: module
+  configuration:
+    -
+      plugin: default_value
+      default_value: {  }
   configuration/rankings:
     -
       plugin: search_configuration_rankings

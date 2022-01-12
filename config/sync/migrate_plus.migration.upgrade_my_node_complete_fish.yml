@@ -1,4 +1,4 @@
-uuid: fd492d86-9f79-4816-b7f4-ee216cfd2141
+uuid: e99c2879-4201-4acf-8943-6216d8c3cb2c
 langcode: en
 status: true
 dependencies: {  }
@@ -91,5 +91,7 @@ destination:
   translations: true
   default_bundle: fish
 migration_dependencies:
-  required: {  }
+  required:
+    - upgrade_my_node_type
+    - upgrade_my_field_instance
   optional: {  }

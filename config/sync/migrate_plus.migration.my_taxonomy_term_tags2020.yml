@@ -1,4 +1,4 @@
-uuid: 3b693bdf-03da-49d9-badf-9ecbb4e90284
+uuid: 6fcb6ef1-0ce3-41f7-8ee7-0d0f2600cdc0
 langcode: en
 status: true
 dependencies: {  }
@@ -24,7 +24,7 @@ process:
   vid:
     -
       plugin: migration_lookup
-      migration: upgrade_d7_taxonomy_vocabulary
+      migration: my_taxonomy_vocabulary
       source: vid
   name:
     -
@@ -50,17 +50,17 @@ process:
     -
       plugin: migration_lookup
       migration:
-        - upgrade_d7_taxonomy_term_tags
-        - upgrade_d7_taxonomy_term_d7
-        - upgrade_d7_taxonomy_term_d8
-        - upgrade_d7_taxonomy_term_projects
-        - upgrade_d7_taxonomy_term_civicrm
-        - upgrade_d7_taxonomy_term_questions
-        - upgrade_d7_taxonomy_term_gtd
-        - upgrade_d7_taxonomy_term_errors
-        - upgrade_d7_taxonomy_term_theme
-        - upgrade_d7_taxonomy_term_mentee
-        - upgrade_d7_taxonomy_term_tags2020
+        - my_taxonomy_term_tags
+        - my_taxonomy_term_d7
+        - my_taxonomy_term_d8
+        - my_taxonomy_term_projects
+        - my_taxonomy_term_civicrm
+        - my_taxonomy_term_questions
+        - my_taxonomy_term_gtd
+        - my_taxonomy_term_errors
+        - my_taxonomy_term_theme
+        - my_taxonomy_term_mentee
+        - my_taxonomy_term_tags2020
   parent:
     -
       plugin: default_value
@@ -83,7 +83,7 @@ destination:
   default_bundle: tags
 migration_dependencies:
   required:
-    - upgrade_d7_taxonomy_vocabulary
+    - my_taxonomy_vocabulary
   optional:
-    - upgrade_d7_field_instance
-    - upgrade_d7_taxonomy_vocabulary
+    - my_field_instance
+    - my_taxonomy_vocabulary

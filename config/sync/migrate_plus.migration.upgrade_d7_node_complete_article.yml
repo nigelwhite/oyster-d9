@@ -1,4 +1,4 @@
-uuid: feee37c8-e49b-4fb3-bb53-1ba5978e6e9e
+uuid: 9d799b00-9565-4021-8fe8-db2c8ca51ec5
 langcode: en
 status: true
 dependencies: {  }
@@ -106,6 +106,12 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_project:
+    -
+      plugin: sub_process
+      source: field_project
+      process:
+        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true
@@ -116,3 +122,4 @@ migration_dependencies:
     - upgrade_d7_node_type
   optional:
     - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

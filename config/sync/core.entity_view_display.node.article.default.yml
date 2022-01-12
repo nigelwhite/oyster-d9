@@ -1,18 +1,15 @@
-uuid: e1fd62f6-c96c-4c17-9c6e-d2a7cfd4729c
+uuid: af8ee1e1-dadc-438e-bb4a-c436939bdd4e
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
-    - field.field.node.article.comment
-    - field.field.node.article.field_image
+    - field.field.node.article.field_blog_post
+    - field.field.node.article.field_date
     - field.field.node.article.field_tags
-    - image.style.large
     - node.type.article
   module:
-    - comment
-    - image
+    - datetime
     - text
     - user
 _core:
@@ -29,23 +26,22 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  comment:
-    type: comment_default
+  field_blog_post:
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
-      pager_id: 0
+      link: true
     third_party_settings: {  }
-    weight: 110
+    weight: 2
     region: content
-  field_image:
-    type: image
-    label: hidden
+  field_date:
+    type: datetime_default
+    label: above
     settings:
-      image_link: ''
-      image_style: large
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    weight: -1
+    weight: 3
     region: content
   field_tags:
     type: entity_reference_label
@@ -53,11 +49,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 1
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  links: true

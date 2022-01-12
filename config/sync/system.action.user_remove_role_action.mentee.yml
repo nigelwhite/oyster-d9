@@ -1,0 +1,14 @@
+uuid: 2409e7d4-81eb-4eff-8ccb-89da9f5189a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mentee
+  module:
+    - user
+id: user_remove_role_action.mentee
+label: 'Remove the mentee role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mentee
