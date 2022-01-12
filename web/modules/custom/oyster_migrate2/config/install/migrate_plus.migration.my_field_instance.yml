@@ -8,7 +8,7 @@ cck_plugin_method: null
 migration_tags:
   - "Drupal 7"
   - Configuration
-  - my
+  - notmy
 migration_group: my
 label: "Field instance configuration"
 source:
@@ -20,12 +20,9 @@ process:
     - plugin: skip_on_value
       source: type
       not_equals: true
-      menthod: row
-      default_value:
-        - field_date
-        - field_blog_post
-        - field_tags
-        - field_impression
+      method: row
+      value:
+        - node, fish, field_impression
     - plugin: process_field
       method: getFieldType
   entity_type:
@@ -84,8 +81,7 @@ process:
 destination:
   plugin: "entity:field_config"
 migration_dependencies:
-  required:
-    - my_field
+  required: []
   optional:
     - my_node_type
     - my_taxonomy_vocabulary

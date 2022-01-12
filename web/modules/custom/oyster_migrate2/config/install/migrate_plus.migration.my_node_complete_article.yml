@@ -69,6 +69,11 @@ process:
       source: field_tags
       process:
         target_id: tid
+  field_mentee:
+    - plugin: sub_process
+      source: field_mentee
+      process:
+        target_id: tid
   field_blog_post:
     - plugin: get
       source: field_blog_post
@@ -89,5 +94,4 @@ migration_dependencies:
   required:
     - my_user
     - my_node_type
-  optional:
-    - my_field_instance
+  optional: []

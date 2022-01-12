@@ -80,66 +80,56 @@ process:
         target_id: fid
         display: display
         description: description
-  field_d7:
-    - plugin: sub_process
-      source: field_d7
-      process:
-        target_id: tid
-  field_other_tags:
-    - plugin: sub_process
-      source: field_other_tags
-      process:
-        target_id: tid
-  field_d8:
-    - plugin: sub_process
-      source: field_d8
-      process:
-        target_id: tid
-  field_project:
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_d7
+  #     process:
+  #       target_id: tid
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_other_tags
+  #     process:
+  #       target_id: tid
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_d8
+  #     process:
+  #       target_id: tid
+  field_tags:
     - plugin: sub_process
       source: field_project
       process:
         target_id: tid
-  field_civicrm:
-    - plugin: sub_process
-      source: field_civicrm
-      process:
-        target_id: tid
-  field_questions:
-    - plugin: sub_process
-      source: field_questions
-      process:
-        target_id: tid
-  field_gtd:
-    - plugin: sub_process
-      source: field_gtd
-      process:
-        target_id: tid
-  field_errors:
-    - plugin: sub_process
-      source: field_errors
-      process:
-        target_id: tid
-  field_theme:
-    - plugin: sub_process
-      source: field_theme
-      process:
-        target_id: tid
-  field_urgent:
-    - plugin: get
-      source: field_urgent
-  field_tag:
-    - plugin: sub_process
-      source: field_tag
-      process:
-        target_id: tid
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_civicrm
+  #     process:
+  #       target_id: tid
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_errors
+  #     process:
+  #       target_id: tid
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_theme
+  #     process:
+  #       target_id: tid
+  # field_tags:
+  #   - plugin: get
+  #     source: field_urgent
+  # field_tags:
+  #   - plugin: sub_process
+  #     source: field_tag
+  #     process:
+  #       target_id: tid
 destination:
   plugin: "entity_complete:node"
   translations: true
   default_bundle: blog
 migration_dependencies:
   required:
-    - my_user
-    - my_node_type
+    - my_d7_user
+    - my_d7_node_type
   optional:
-    - my_field_instance
+    - my_d7_field_instance
