@@ -64,16 +64,21 @@ process:
   body:
     - plugin: get
       source: body
-  field_tags:
+  field_tags_temp:
     - plugin: sub_process
       source: field_tags
       process:
         target_id: tid
-  field_mentee:
+  field_project_temp:
     - plugin: sub_process
-      source: field_mentee
+      source: field_project
       process:
         target_id: tid
+  field_tags:
+    - plugin: merge
+      source:
+        - "@field_tags_temp"
+        - "@field_project_temp"
   field_blog_post:
     - plugin: get
       source: field_blog_post
