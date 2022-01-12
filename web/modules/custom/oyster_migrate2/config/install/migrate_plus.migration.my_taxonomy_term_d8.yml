@@ -35,30 +35,30 @@ process:
   weight:
     - plugin: get
       source: weight
-  parent_id:
-    - plugin: skip_on_empty
-      method: process
-      source: parent
-    - plugin: migration_lookup
-      migration:
-        - my_taxonomy_term_tags
-        - my_taxonomy_term_d7
-        - my_taxonomy_term_d8
-        - my_taxonomy_term_projects
-        - my_taxonomy_term_civicrm
-        - my_taxonomy_term_questions
-        - my_taxonomy_term_gtd
-        - my_taxonomy_term_errors
-        - my_taxonomy_term_theme
-        - my_taxonomy_term_mentee
-        - my_taxonomy_term_tags2020
-  parent:
-    - plugin: default_value
-      default_value: 0
-      source: "@parent_id"
-  forum_container:
-    - plugin: get
-      source: is_container
+  # parent_id:
+  #   - plugin: skip_on_empty
+  #     method: process
+  #     source: parent
+  #   - plugin: migration_lookup
+  #     migration:
+  #       - my_taxonomy_term_tags
+  #       - my_taxonomy_term_d7
+  #       - my_taxonomy_term_d8
+  #       - my_taxonomy_term_projects
+  #       - my_taxonomy_term_civicrm
+  #       - my_taxonomy_term_questions
+  #       - my_taxonomy_term_gtd
+  #       - my_taxonomy_term_errors
+  #       - my_taxonomy_term_theme
+  #       - my_taxonomy_term_mentee
+  #       - my_taxonomy_term_tags2020
+  # parent:
+  #   - plugin: default_value
+  #     default_value: 0
+  #     source: "@parent_id"
+  # forum_container:
+  #   - plugin: get
+  #     source: is_container
   changed:
     - plugin: get
       source: timestamp
