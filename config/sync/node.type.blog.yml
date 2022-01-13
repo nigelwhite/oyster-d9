@@ -1,4 +1,4 @@
-uuid: 66a66d51-de16-4af6-98a8-50b3d853529f
+uuid: 31c94402-1fe2-49ee-8098-3d01a7781fb5
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
 third_party_settings:
   menu_ui:
     available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
-name: 'Blog entry'
+      - main
+    parent: 'main:'
+name: Blog
 type: blog
-description: 'Use for multi-user blogs. Every user gets a personal blog.'
+description: ''
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
-display_submitted: false
+display_submitted: true

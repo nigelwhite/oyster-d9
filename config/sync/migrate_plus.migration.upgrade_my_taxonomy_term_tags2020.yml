@@ -1,4 +1,4 @@
-uuid: be6b14e0-0a78-4c10-89d4-0fc2092c7fd0
+uuid: a9e5d2f7-07b3-4cdf-aa99-67d523a3fec0
 langcode: en
 status: true
 dependencies: {  }
@@ -43,31 +43,6 @@ process:
     -
       plugin: get
       source: weight
-  parent_id:
-    -
-      plugin: skip_on_empty
-      method: process
-      source: parent
-    -
-      plugin: migration_lookup
-      migration:
-        - upgrade_my_taxonomy_term_tags
-        - upgrade_my_taxonomy_term_d7
-        - upgrade_my_taxonomy_term_d8
-        - upgrade_my_taxonomy_term_projects
-        - upgrade_my_taxonomy_term_civicrm
-        - upgrade_my_taxonomy_term_errors
-        - upgrade_my_taxonomy_term_theme
-        - upgrade_my_taxonomy_term_tags2020
-  parent:
-    -
-      plugin: default_value
-      default_value: 0
-      source: '@parent_id'
-  forum_container:
-    -
-      plugin: get
-      source: is_container
   changed:
     -
       plugin: get
@@ -85,11 +60,3 @@ migration_dependencies:
   optional:
     - upgrade_my_field_instance
     - upgrade_my_taxonomy_vocabulary
-    - upgrade_my_taxonomy_term_tags
-    - upgrade_my_taxonomy_term_d7
-    - upgrade_my_taxonomy_term_d8
-    - upgrade_my_taxonomy_term_projects
-    - upgrade_my_taxonomy_term_civicrm
-    - upgrade_my_taxonomy_term_errors
-    - upgrade_my_taxonomy_term_theme
-    - upgrade_my_taxonomy_term_tags2020

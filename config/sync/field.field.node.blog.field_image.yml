@@ -1,4 +1,4 @@
-uuid: db020389-7c31-4394-922b-9738a5831bc4
+uuid: c8bf964e-fe68-4cb5-96be-f1e9ec3933d2
 langcode: en
 status: true
 dependencies:
@@ -30,7 +30,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null

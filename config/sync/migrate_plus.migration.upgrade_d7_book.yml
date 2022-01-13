@@ -1,4 +1,4 @@
-uuid: d590f186-19da-4b7f-b380-c71f9a1f2372
+uuid: 90ab0b2d-6a1c-4c5b-9bd3-0f1664a0ff9b
 langcode: en
 status: true
 dependencies: {  }
@@ -43,7 +43,6 @@ migration_dependencies:
     - upgrade_d7_node_complete_book
     - upgrade_d7_node_complete_feed
     - upgrade_d7_node_complete_feed_item
-    - upgrade_d7_node_complete_fish
     - upgrade_d7_node_complete_image
     - upgrade_d7_node_complete_page
     - upgrade_d7_node_complete_panel

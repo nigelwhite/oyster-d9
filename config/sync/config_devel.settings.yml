@@ -17,10 +17,10 @@ auto_import:
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_file.yml
     hash: ''
   -
-    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu_links.yml
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu.yml
     hash: ''
   -
-    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu.yml
+    filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_menu_links.yml
     hash: ''
   -
     filename: modules/custom/oyster_migrate2/config/install/migrate_plus.migration.my_node_complete_article.yml

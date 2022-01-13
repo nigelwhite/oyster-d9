@@ -1,17 +1,20 @@
-uuid: 1a55c726-a758-4710-af68-538cf1dbf2e1
+uuid: 50b7da6a-8a7b-4673-b8bb-ff28fd23ea51
 langcode: en
 status: true
 dependencies: {  }
-id: upgrade_d7_menu_links
+id: upgrade_my_menu_links
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
   - 'Drupal 7'
   - Content
+  - my
+  - menu
 migration_group: migrate_drupal_7
 label: 'Menu links'
 source:
+  key: migrate
   plugin: menu_link
   constants:
     bundle: menu_link_content
@@ -45,7 +48,7 @@ process:
   menu_name:
     -
       plugin: migration_lookup
-      migration: upgrade_d7_menu
+      migration: upgrade_my_menu
       source: menu_name
     -
       plugin: skip_on_empty
@@ -112,14 +115,9 @@ destination:
   no_stub: true
 migration_dependencies:
   required:
-    - upgrade_d7_menu
+    - upgrade_my_menu
   optional:
-    - upgrade_d7_node_complete_article
-    - upgrade_d7_node_complete_blog
-    - upgrade_d7_node_complete_book
-    - upgrade_d7_node_complete_feed
-    - upgrade_d7_node_complete_feed_item
-    - upgrade_d7_node_complete_image
-    - upgrade_d7_node_complete_page
-    - upgrade_d7_node_complete_panel
-    - upgrade_d7_menu
+    - upgrade_my_node_complete_article
+    - upgrade_my_node_complete_blog
+    - upgrade_my_node_complete_book
+    - upgrade_my_menu

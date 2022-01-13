@@ -1,4 +1,4 @@
-uuid: e8864755-247f-471a-8d8c-cc63e1f5555d
+uuid: da4ca0c1-a010-4342-b489-8379f9cafce2
 langcode: en
 status: true
 dependencies:
@@ -32,7 +32,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 103
+    weight: 104
     region: content
   field_image:
     type: image
@@ -41,7 +41,7 @@ content:
       image_link: ''
       image_style: ''
     third_party_settings: {  }
-    weight: 104
+    weight: 103
     region: content
   field_tags:
     type: entity_reference_label

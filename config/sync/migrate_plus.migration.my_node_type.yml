@@ -1,4 +1,4 @@
-uuid: 54cac782-083d-4880-818f-6a31f65286af
+uuid: d3d32580-d3e0-4a34-aaa4-043cfec0ca5d
 langcode: en
 status: true
 dependencies: {  }
@@ -25,7 +25,6 @@ process:
       value:
         - blog
         - book
-        - fish
         - article
         - page
       method: row

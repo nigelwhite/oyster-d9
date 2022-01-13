@@ -1,4 +1,4 @@
-uuid: e99c2879-4201-4acf-8943-6216d8c3cb2c
+uuid: 605a53f1-e11c-47a7-97e7-18f7929461e7
 langcode: en
 status: true
 dependencies: {  }
@@ -93,5 +93,4 @@ destination:
 migration_dependencies:
   required:
     - upgrade_my_node_type
-    - upgrade_my_field_instance
   optional: {  }

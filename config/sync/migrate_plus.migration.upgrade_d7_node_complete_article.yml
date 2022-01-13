@@ -1,4 +1,4 @@
-uuid: 9d799b00-9565-4021-8fe8-db2c8ca51ec5
+uuid: 7459f38c-b3d3-4219-93ac-f98f04ecb8ae
 langcode: en
 status: true
 dependencies: {  }
@@ -106,12 +106,6 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_project:
-    -
-      plugin: sub_process
-      source: field_project
-      process:
-        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true

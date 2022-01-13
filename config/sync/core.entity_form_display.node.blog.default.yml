@@ -1,4 +1,4 @@
-uuid: 40b29ecb-7202-4499-a443-243ed7c85c20
+uuid: 13a6f75d-3796-47c5-a8c4-ed2562124a3a
 langcode: en
 status: true
 dependencies:
@@ -37,13 +37,13 @@ content:
     third_party_settings: {  }
   field_date:
     type: datetime_default
-    weight: 123
+    weight: 124
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 124
+    weight: 123
     region: content
     settings:
       progress_indicator: throbber

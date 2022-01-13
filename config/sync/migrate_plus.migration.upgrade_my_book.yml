@@ -1,4 +1,4 @@
-uuid: 7adacf1c-1f60-4fcb-a376-1ef616f7d5af
+uuid: c70170f2-a677-40a5-841f-041b066ee007
 langcode: en
 status: true
 dependencies: {  }
@@ -35,13 +35,12 @@ process:
       source: plid
     -
       plugin: migration_lookup
-      migration: {  }
+      migration: upgrade_my_book
 destination:
   plugin: book
 migration_dependencies:
   required:
     - upgrade_my_node_complete_blog
     - upgrade_my_node_complete_book
-    - upgrade_my_node_complete_fish
   optional:
     - upgrade_my_book

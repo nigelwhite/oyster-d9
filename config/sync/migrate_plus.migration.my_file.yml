@@ -1,4 +1,4 @@
-uuid: a615994c-84d9-4b3c-80be-44f118ff2d7a
+uuid: 1e495c0c-3e61-457a-a034-e4ca8396bba6
 langcode: en
 status: true
 dependencies: {  }
@@ -16,7 +16,7 @@ source:
   plugin: d7_file
   scheme: public
   constants:
-    source_base_path: 'https://nwhite.uk/oyster/sites/default/files/'
+    source_base_path: /home/nigel/ddev/oyster-d9/web/sites/default/files/migrate_files/
 process:
   fid:
     -

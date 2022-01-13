@@ -1,4 +1,4 @@
-uuid: 222eebe8-c7d5-4e24-a7be-9aca048e3e65
+uuid: ba4bee29-c45a-4b4d-9972-45f04da0832b
 langcode: en
 status: true
 dependencies:
@@ -24,6 +24,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

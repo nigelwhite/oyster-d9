@@ -1,4 +1,4 @@
-uuid: 193f1784-0f93-418e-b591-88435fac2233
+uuid: 69d40048-7ebf-42bb-a10d-7c70d8e29f35
 langcode: en
 status: true
 dependencies: {  }
@@ -37,7 +37,6 @@ process:
         - upgrade_d7_node_complete_book
         - upgrade_d7_node_complete_feed
         - upgrade_d7_node_complete_feed_item
-        - upgrade_d7_node_complete_fish
         - upgrade_d7_node_complete_image
         - upgrade_d7_node_complete_page
         - upgrade_d7_node_complete_panel
@@ -121,7 +120,6 @@ migration_dependencies:
     - upgrade_d7_node_complete_book
     - upgrade_d7_node_complete_feed
     - upgrade_d7_node_complete_feed_item
-    - upgrade_d7_node_complete_fish
     - upgrade_d7_node_complete_image
     - upgrade_d7_node_complete_page
     - upgrade_d7_node_complete_panel
@@ -132,7 +130,6 @@ migration_dependencies:
     - upgrade_d7_node_complete_book
     - upgrade_d7_node_complete_feed
     - upgrade_d7_node_complete_feed_item
-    - upgrade_d7_node_complete_fish
     - upgrade_d7_node_complete_image
     - upgrade_d7_node_complete_page
     - upgrade_d7_node_complete_panel
@@ -143,7 +140,6 @@ migration_dependencies:
     - upgrade_d7_node_complete_book
     - upgrade_d7_node_complete_feed
     - upgrade_d7_node_complete_feed_item
-    - upgrade_d7_node_complete_fish
     - upgrade_d7_node_complete_image
     - upgrade_d7_node_complete_page
     - upgrade_d7_node_complete_panel

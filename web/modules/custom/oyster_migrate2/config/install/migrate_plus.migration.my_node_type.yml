@@ -23,7 +23,6 @@ process:
       value:
         - blog
         - book
-        - fish
         - article
         - page
       method: row

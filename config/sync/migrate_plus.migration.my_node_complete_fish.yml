@@ -1,4 +1,4 @@
-uuid: 4f3ac312-c64b-43a1-9191-8339094a336d
+uuid: 56e5c26f-c67f-462d-b13c-d0a03f4e0412
 langcode: en
 status: true
 dependencies: {  }
@@ -93,5 +93,4 @@ migration_dependencies:
   required:
     - my_d7_user
     - my_node_type
-    - my_field_instance
   optional: {  }
