@@ -17,7 +17,8 @@ source:
   constants:
     # source_base_path: "https://nwhite.uk/oyster/"
     # source_base_path: "https://nwhite.uk/oyster/sites/default/files/"
-    source_base_path: "/home/nigel/ddev/oyster-d9/web/sites/default/files/migrate_files/"
+    # source_base_path: "/home/nigel/ddev/oyster-d9/web/sites/default/files/migrate_files/"
+    source_base_path: "/home/nigel/ddev/oyster/sites/default/files/"
     # source_base_path: "http://oyster-d9.ddev.site:82/web/sites/default/files/migrate_files/files/"
     # source_base_path: "sites/default/files/migrate_files/files/"
 process:
