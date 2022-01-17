@@ -1,4 +1,4 @@
-uuid: be0a2ba8-4367-4932-b5ac-dba278f9c263
+uuid: e151db07-e1cd-488a-a729-77ac6e711bb3
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - bootstrap5
-_core:
-  default_config_hash: Fm7sDs2U1u99MaVOZEZqa-QOJrrUiQMWJb1jMozYO48
-id: bootstrap5_main_navigation
+id: mainmenu
 theme: bootstrap5
 region: nav_main
 weight: 0
@@ -18,10 +16,10 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main menu'
   label_display: '0'
   provider: system
   level: 1
   depth: 0
-  expand_all_items: true
+  expand_all_items: false
 visibility: {  }
