@@ -9,6 +9,7 @@ dependencies:
   module:
     - block
     - book
+    - coffee
     - comment
     - contact
     - contextual
@@ -20,7 +21,6 @@ dependencies:
     - shortcut
     - system
     - taxonomy
-    - toolbar
     - views_ui
 _core:
   default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
@@ -57,7 +57,6 @@ permissions:
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access site-wide contact form'
-  - 'access toolbar'
   - 'access user contact forms'
   - 'access user profiles'
   - 'add content to books'

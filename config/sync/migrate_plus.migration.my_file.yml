@@ -16,7 +16,7 @@ source:
   plugin: d7_file
   scheme: public
   constants:
-    source_base_path: /home/nigel/ddev/oyster-d9/web/sites/default/files/migrate_files/files/
+    source_base_path: /home/nigel/ddev/oyster/sites/default/files/
 process:
   fid:
     -
