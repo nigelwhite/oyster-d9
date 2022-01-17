@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/bootstrap5": "1.1.x-dev@dev",
         "drupal/coffee": "^1.2",
@@ -99,6 +100,13 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "extra": {
+            "patches": {
+                "drupal/core": {
+                    "Add an option to display the top level page in BookNavigationBlock": "https://www.drupal.org/files/issues/2020-12-17/2827910-43.patch"
+                }
+            }
         }
     }
 }
