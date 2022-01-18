@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - comment
+    - media
     - search
     - system
 _core:
@@ -20,3 +21,4 @@ permissions:
   - 'use media wysiwyg'
   - 'use text format filtered_html'
   - 'view files'
+  - 'view media'

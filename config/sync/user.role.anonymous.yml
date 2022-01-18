@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - comment
+    - media
     - search
     - system
 _core:
@@ -17,3 +18,4 @@ permissions:
   - 'access content'
   - 'search content'
   - 'view files'
+  - 'view media'
