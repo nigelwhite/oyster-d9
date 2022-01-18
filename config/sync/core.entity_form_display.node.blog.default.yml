@@ -3,17 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_media_entity_browser
     - field.field.node.blog.body
     - field.field.node.blog.field_date
-    - field.field.node.blog.field_image
     - field.field.node.blog.field_media
     - field.field.node.blog.field_tags
-    - image.style.thumbnail
     - node.type.blog
   module:
     - datetime
-    - image
-    - media_library
+    - entity_browser
     - path
     - text
 id: node.blog.default
@@ -43,20 +41,20 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image_image
-    weight: 123
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_media:
-    type: media_library_widget
+    type: entity_browser_entity_reference
     weight: 125
     region: content
     settings:
-      media_types: {  }
+      entity_browser: image_media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      field_widget_display_settings:
+        view_mode: default
+      selection_mode: selection_append
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete

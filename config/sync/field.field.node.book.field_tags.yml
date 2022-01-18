@@ -1,15 +1,15 @@
-uuid: ba4bee29-c45a-4b4d-9972-45f04da0832b
+uuid: 716a2df3-cb7c-4977-a4a1-5b2038cfc488
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_tags
-    - node.type.blog
+    - node.type.book
     - taxonomy.vocabulary.tags
-id: node.blog.field_tags
+id: node.book.field_tags
 field_name: field_tags
 entity_type: node
-bundle: blog
+bundle: book
 label: Tags
 description: ''
 required: true

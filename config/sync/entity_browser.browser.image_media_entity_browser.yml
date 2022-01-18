@@ -1,0 +1,42 @@
+uuid: fe1a6f25-847a-46b5-8e96-c5fad53e1b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.image_media_entity_browser_listing
+  module:
+    - views
+name: image_media_entity_browser
+label: 'Image media entity browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c9cd5de6-80e9-449f-8a51-151d4ad19bf7:
+    id: view
+    uuid: c9cd5de6-80e9-449f-8a51-151d4ad19bf7
+    label: View
+    weight: 1
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: image_media_entity_browser_listing
+      view_display: entity_browser_1
+  547b1ba2-e817-4e7d-a437-1cb934424168:
+    id: media_image_upload
+    uuid: 547b1ba2-e817-4e7d-a437-1cb934424168
+    label: 'Image Upload'
+    weight: 2
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: media_image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: Upload
