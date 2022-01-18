@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_date
     - field.field.node.blog.field_image
+    - field.field.node.blog.field_media
     - field.field.node.blog.field_tags
     - node.type.blog
   module:
@@ -42,6 +43,15 @@ content:
       image_style: ''
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_tags:
     type: entity_reference_label

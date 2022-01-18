@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_date
     - field.field.node.blog.field_image
+    - field.field.node.blog.field_media
     - field.field.node.blog.field_tags
     - image.style.thumbnail
     - node.type.blog
   module:
     - datetime
     - image
+    - media_library
     - path
     - text
 id: node.blog.default
@@ -48,6 +50,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 125
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
