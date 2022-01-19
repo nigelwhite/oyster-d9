@@ -254,9 +254,10 @@ display:
       path: books
       menu:
         type: normal
-        title: books
+        title: Books
         description: ''
         weight: 0
+        enabled: true
         expanded: false
         menu_name: main
         parent: ''
