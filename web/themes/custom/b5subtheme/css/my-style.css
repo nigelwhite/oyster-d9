@@ -1,0 +1,6 @@
+// Hide the Mega Menu for mobile devices
+@media (max-width: 991px) {
+  .block-tb-megamenu {
+    display: none;
+  }
+}
