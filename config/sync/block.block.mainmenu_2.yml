@@ -1,4 +1,4 @@
-uuid: ebec9e19-a51b-4d22-ab26-918598d18331
+uuid: bb1ee41e-1a26-4d6f-8b04-ed0521990d84
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - b5subtheme
-_core:
-  default_config_hash: KLMbdngczHd0RpmyzrandtC1jyXEv80Jtj7ofIVIKu8
-id: b5subtheme_main_navigation
+id: mainmenu_2
 theme: b5subtheme
 region: nav_main
 weight: 0
@@ -18,10 +16,10 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main menu'
   label_display: '0'
   provider: system
   level: 1
   depth: 0
-  expand_all_items: true
+  expand_all_items: false
 visibility: {  }
