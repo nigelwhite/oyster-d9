@@ -11,7 +11,7 @@
 /web/sites/*/settings.local.php
 /web/sites/default/default.services.yml
 /web/sites/default/default.settings.php
-/web/sites/default/development.services.yml
+/web/sites/default/local.development.services.yml
 
 
 # Ignore Drupal's file directory
@@ -19,15 +19,9 @@
 
 # Ignore local dev stuff
 /localstore/
+/import
 .ddev
 .vscode
-
-# Ignore local dev resources
-/localdev/
-/app/
 readmeNW.md
-/import
 
-# ignore custom theme tooling
-web/themes/custom/bootstrap4_sub/node_modules
-web/themes/custom/bootstrap4_sub/scss
+
