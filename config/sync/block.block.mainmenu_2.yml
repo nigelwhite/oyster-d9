@@ -1,11 +1,9 @@
-uuid: bb1ee41e-1a26-4d6f-8b04-ed0521990d84
+uuid: 04a66fb6-6613-488d-a3e9-ee9218dc32cb
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.main
   module:
-    - system
+    - tb_megamenu
   theme:
     - b5subtheme
 id: mainmenu_2
@@ -13,13 +11,10 @@ theme: b5subtheme
 region: nav_main
 weight: 0
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'tb_megamenu_menu_block:main'
 settings:
-  id: 'system_menu_block:main'
+  id: 'tb_megamenu_menu_block:main'
   label: 'Main menu'
   label_display: '0'
-  provider: system
-  level: 1
-  depth: 0
-  expand_all_items: false
+  provider: tb_megamenu
 visibility: {  }
