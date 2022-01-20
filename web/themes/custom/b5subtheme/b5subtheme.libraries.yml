@@ -3,3 +3,4 @@ global-styling:
     theme:
       css/style.css: {}
       css/my-style.css: {}
+      css/my_menus.css: {}
