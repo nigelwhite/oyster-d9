@@ -32,6 +32,8 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  jquery_ui: 0
+  libraries: 0
   link: 0
   media: 0
   media_library: 0
