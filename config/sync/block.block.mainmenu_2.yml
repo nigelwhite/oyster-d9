@@ -1,14 +1,14 @@
-uuid: 04a66fb6-6613-488d-a3e9-ee9218dc32cb
+uuid: f1579f02-6a18-458c-b32d-ad5e120dfd09
 langcode: en
 status: true
 dependencies:
   module:
     - tb_megamenu
   theme:
-    - b5subtheme
+    - bootstrap_barrio
 id: mainmenu_2
-theme: b5subtheme
-region: nav_main
+theme: bootstrap_barrio
+region: primary_menu
 weight: 0
 provider: null
 plugin: 'tb_megamenu_menu_block:main'
