@@ -1,0 +1,21 @@
+uuid: e6f03e07-6e5b-4963-99b4-f276608fce52
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_booknavigation_3
+theme: bootstrap_barrio_subtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  label_display: '0'
+  provider: book
+  block_mode: 'book pages'
+visibility: {  }
