@@ -19,6 +19,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.0",
         "drupal/bootstrap5": "1.1.x-dev@dev",
+        "drupal/bootstrap_barrio": "^5.5",
         "drupal/coffee": "^1.2",
         "drupal/config_devel": "^1.8",
         "drupal/config_filter": "^2.2",
