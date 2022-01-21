@@ -59,6 +59,16 @@
                 "web-root": "web/"
             }
         },
+        "patches": {
+            "drupal/core": {
+                "Add an option to display the top level page in BookNavigationBlock": "https://www.drupal.org/files/issues/2020-12-17/2827910-43.patch"
+            },
+            "drupal/tb_megamenu": {
+                "Mobile TB Megamenu not working with Bootstrap Barrio (Bootstrap 5)": "https://www.drupal.org/files/issues/2021-08-05/bootstrap5-3219876-5.patch"
+            }
+        },
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -108,13 +118,6 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
-        },
-        "extra": {
-            "patches": {
-                "drupal/core": {
-                    "Add an option to display the top level page in BookNavigationBlock": "https://www.drupal.org/files/issues/2020-12-17/2827910-43.patch"
-                }
-            }
         }
     }
 }

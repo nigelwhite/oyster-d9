@@ -1,0 +1,5 @@
+.tb-megamenu .nav-collapse,
+.tb-megamenu .nav-collapse.collapse {
+  z-index: 999;
+  display: block;
+}

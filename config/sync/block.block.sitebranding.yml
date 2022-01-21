@@ -1,4 +1,4 @@
-uuid: 8af41992-f029-4587-b103-405f2c924b13
+uuid: 9bcd3a41-c5ca-49af-b4a6-c468d46a3fbd
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - system
   theme:
     - bootstrap_barrio_subtheme
-id: bootstrap_barrio_subtheme_sitebranding
+id: sitebranding
 theme: bootstrap_barrio_subtheme
-region: top_header
+region: header
 weight: 0
 provider: null
 plugin: system_branding_block
