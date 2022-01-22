@@ -1,0 +1,22 @@
+uuid: 6a70aa91-6b31-44d7-8550-2b3cb0eada2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - b5subtheme
+id: booknavigation
+theme: b5subtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  label_display: '0'
+  provider: book
+  block_mode: 'book pages'
+  show_top_item: true
+visibility: {  }
