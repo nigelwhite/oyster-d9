@@ -1,9 +1,11 @@
-uuid: caddf04d-4ad6-4238-846b-cfd29b23280c
+uuid: 3b516010-de76-4df4-aff8-79f2cac65917
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.main
   module:
-    - tb_megamenu
+    - system
   theme:
     - bootstrap_barrio_subtheme
 id: mainmenu
@@ -11,10 +13,13 @@ theme: bootstrap_barrio_subtheme
 region: primary_menu
 weight: 0
 provider: null
-plugin: 'tb_megamenu_menu_block:main'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'tb_megamenu_menu_block:main'
+  id: 'system_menu_block:main'
   label: 'Main menu'
   label_display: '0'
-  provider: tb_megamenu
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }
