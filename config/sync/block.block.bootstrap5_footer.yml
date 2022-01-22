@@ -1,4 +1,4 @@
-uuid: 6f42e5bd-a47f-4d1c-9b07-cc26a8c481ac
+uuid: 64dbb8fa-4dee-400f-aa85-f5ef22b56368
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
+    - bootstrap5
 _core:
-  default_config_hash: xX9k7eXwGFBBlYjoy1fbmKOwQn8jAEcOjJldcwEGTws
-id: bootstrap_barrio_footer
-theme: bootstrap_barrio
-region: top_header
+  default_config_hash: xBR1vgpnqSUW4pA2LC3rfhu27FQUox9zZEYsdAFM2Sg
+id: bootstrap5_footer
+theme: bootstrap5
+region: footer
 weight: -6
 provider: null
 plugin: 'system_menu_block:footer'

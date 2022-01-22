@@ -1,13 +1,13 @@
-uuid: 7cc58848-aace-4015-803d-5a559ea3f767
+uuid: 2a120d15-5c9c-4070-87e9-a6db8c45beac
 langcode: en
 status: true
 dependencies:
   theme:
-    - bootstrap_barrio
+    - b5subtheme
 _core:
   default_config_hash: yukt8rHM0BMQj7AxGhb_4BRgUwLFIU_L1yXM7hE3Hl0
-id: bootstrap_barrio_local_tasks
-theme: bootstrap_barrio
+id: b5subtheme_local_tasks
+theme: b5subtheme
 region: content
 weight: -4
 provider: null

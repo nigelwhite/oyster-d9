@@ -1,15 +1,17 @@
-uuid: 78ed3bad-6dfe-4249-8033-8f2965d7a248
+uuid: 50c49ca7-2a28-471e-8632-176d5f6dcbf0
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap_barrio
-id: sitebranding_2
-theme: bootstrap_barrio
-region: header
-weight: 0
+    - b5subtheme
+_core:
+  default_config_hash: h3ged36UsT5cjmx2L-06ff_WwxhvqJpkyPChLHbf5vQ
+id: b5subtheme_branding
+theme: b5subtheme
+region: nav_branding
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:
@@ -17,7 +19,7 @@ settings:
   label: 'Site branding'
   label_display: '0'
   provider: system
-  use_site_logo: false
+  use_site_logo: true
   use_site_name: true
   use_site_slogan: false
 visibility: {  }
