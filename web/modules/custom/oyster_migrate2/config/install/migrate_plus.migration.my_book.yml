@@ -9,6 +9,7 @@ migration_tags:
   - "Drupal 7"
   - Content
   - my
+  - book
 migration_group: my
 label: Books
 source:
