@@ -1,4 +1,4 @@
-uuid: 365aab2d-5dde-4f8b-b6d8-8a5fbaca48a9
+uuid: 2b853097-158b-40ae-8b50-0ff41ea5e34f
 langcode: en
 status: true
 dependencies: {  }
@@ -28,7 +28,7 @@ process:
       source: vid
   name:
     -
-      plugin: get
+      plugin: merge_duplicated_terms
       source: name
   description/value:
     -

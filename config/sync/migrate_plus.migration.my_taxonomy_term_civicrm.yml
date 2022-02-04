@@ -1,52 +1,61 @@
-uuid: 5b41f171-3e34-4544-99b2-125e77397293
+uuid: bdbef6f5-8b2b-425c-a6eb-acb2a72d0eed
 langcode: en
 status: true
-dependencies: {}
+dependencies: {  }
 id: my_taxonomy_term_civicrm
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - "Drupal 7"
+  - 'Drupal 7'
   - Content
   - my
   - vocab
 migration_group: my
-label: "Taxonomy terms (CiviCrm)"
+label: 'Taxonomy terms (CiviCrm)'
 source:
   plugin: d7_taxonomy_term
   bundle: civicrm
 process:
   tid:
-    - plugin: get
+    -
+      plugin: get
       source: tid
   vid:
-    - plugin: migration_lookup
+    -
+      plugin: migration_lookup
       migration: my_taxonomy_vocabulary
       source: vid
   name:
-    - plugin: merge_duplicated_terms
+    -
+      plugin: merge_duplicated_terms
       source: name
   description/value:
-    - plugin: get
+    -
+      plugin: get
       source: description
   description/format:
-    - plugin: get
+    -
+      plugin: get
       source: format
   weight:
-    - plugin: get
+    -
+      plugin: get
       source: weight
   changed:
-    - plugin: get
+    -
+      plugin: get
       source: timestamp
   langcode:
-    - plugin: get
+    -
+      plugin: get
       source: language
 destination:
-  plugin: "entity:taxonomy_term"
+  plugin: 'entity:taxonomy_term'
   default_bundle: tags
 migration_dependencies:
   required:
     - my_taxonomy_vocabulary
   optional:
+    - my_field_instance
     - my_taxonomy_vocabulary

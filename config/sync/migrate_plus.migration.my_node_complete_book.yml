@@ -1,4 +1,4 @@
-uuid: a44019e9-9371-422f-bc18-ac7c0363a544
+uuid: e3f2b012-d866-4f0e-bc69-f4fff2e2a99e
 langcode: en
 status: true
 dependencies: {  }
@@ -10,6 +10,7 @@ migration_tags:
   - 'Drupal 7'
   - Content
   - my
+  - book
 migration_group: my
 label: 'Node complete (Book page)'
 source:
