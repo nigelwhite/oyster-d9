@@ -38,6 +38,7 @@
         "drupal/migrate_file": "^2.0",
         "drupal/migrate_file_to_media": "^2.0",
         "drupal/migrate_manifest": "^3.0",
+        "drupal/migrate_merge_duplicated_terms": "^1.0@beta",
         "drupal/migrate_plus": "^5.2",
         "drupal/migrate_tools": "5.x-dev@dev",
         "drupal/migrate_upgrade": "3.x-dev@dev",

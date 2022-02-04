@@ -47,6 +47,7 @@ module:
   migrate_file: 0
   migrate_file_to_media: 0
   migrate_manifest: 0
+  migrate_merge_duplicated_terms: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
