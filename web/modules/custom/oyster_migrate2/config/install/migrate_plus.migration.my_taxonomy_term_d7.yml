@@ -24,7 +24,7 @@ process:
       migration: my_taxonomy_vocabulary
       source: vid
   name:
-    - plugin: get
+    - plugin: merge_duplicated_terms
       source: name
   description/value:
     - plugin: get

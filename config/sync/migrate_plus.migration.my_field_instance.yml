@@ -1,104 +1,88 @@
 uuid: 7336500d-b2ba-4b64-b3f4-ac6e8c26e680
 langcode: en
 status: true
-dependencies: {  }
+dependencies: {}
 id: my_field_instance
 class: Drupal\migrate_drupal\Plugin\migrate\FieldMigration
 field_plugin_method: alterFieldInstanceMigration
 cck_plugin_method: null
 migration_tags:
-  - 'Drupal 7'
+  - "Drupal 7"
   - Configuration
   - notmy
 migration_group: my
-label: 'Field instance configuration'
+label: "Field instance configuration"
 source:
   plugin: d7_field_instance
   constants:
     status: true
 process:
   type:
-    -
-      plugin: skip_on_value
+    - plugin: skip_on_value
       source: type
       not_equals: true
       method: row
       value:
-        - 'node, fish, field_impression'
-    -
-      plugin: process_field
+        - "node, fish, field_impression"
+    - plugin: process_field
       method: getFieldType
   entity_type:
-    -
-      plugin: get
+    - plugin: get
       source: entity_type
   field_name:
-    -
-      plugin: get
+    - plugin: get
       source: field_name
   bundle_mapped:
-    -
-      plugin: static_map
+    - plugin: static_map
       source: bundle
       bypass: true
       map:
         comment_node_forum: comment_forum
   bundle:
-    -
-      plugin: field_bundle
+    - plugin: field_bundle
       source:
         - entity_type
-        - '@bundle_mapped'
+        - "@bundle_mapped"
   label:
-    -
-      plugin: get
+    - plugin: get
       source: label
   description:
-    -
-      plugin: get
+    - plugin: get
       source: description
   required:
-    -
-      plugin: get
+    - plugin: get
       source: required
   status:
-    -
-      plugin: get
+    - plugin: get
       source: constants/status
   allowed_values:
-    -
-      plugin: sub_process
+    - plugin: sub_process
       source: allowed_vid
       process:
-        -
-          plugin: migration_lookup
+        - plugin: migration_lookup
           migration: my_taxonomy_vocabulary
           source: vid
   settings:
-    -
-      plugin: d7_field_instance_settings
+    - plugin: d7_field_instance_settings
       source:
         - settings
         - widget
         - field_definition
   default_value_function:
-    -
-      plugin: get
-      source: ''
+    - plugin: get
+      source: ""
   default_value:
-    -
-      plugin: d7_field_instance_defaults
+    - plugin: d7_field_instance_defaults
       source:
         - default_value
         - widget
   translatable:
-    -
-      plugin: get
+    - plugin: get
       source: translatable
 destination:
-  plugin: 'entity:field_config'
+  plugin: "entity:field_config"
 migration_dependencies:
-  required: {  }
+  required: {}
   optional:
     - my_node_type
     - my_taxonomy_vocabulary
