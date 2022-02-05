@@ -15,15 +15,18 @@
 
 
 # Ignore Drupal's file directory
-/web/sites/default/files/color/
-/web/sites/default/files/css/
-/web/sites/default/files/library-definitions/
-/web/sites/default/files/media-icons/
-/web/sites/default/files/migrate_files/
-/web/sites/default/files/php/
-/web/sites/default/files/styles/
-/web/sites/default/files/sync/
-/web/sites/default/files/.htaccess
+/web/sites/default/files/
+
+# Temp settings to upload sites/default/files to live
+# /web/sites/default/files/color/
+# /web/sites/default/files/css/
+# /web/sites/default/files/library-definitions/
+# /web/sites/default/files/media-icons/
+# /web/sites/default/files/migrate_files/
+# /web/sites/default/files/php/
+# /web/sites/default/files/styles/
+# /web/sites/default/files/sync/
+# /web/sites/default/files/.htaccess
 
 # Ignore local dev stuff
 /localstore/
