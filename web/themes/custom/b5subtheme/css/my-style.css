@@ -5,3 +5,33 @@ a {
 a:hover {
   color: #00309e;
 }
+
+.display-4 {
+  font-size: calc(1rem + 1.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+}
+
+.breadcrumb {
+  border: none;
+  background-color: var(--bs-body-bg);
+  margin-top: 1rem;
+}
+
+.page-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.book-navigation .book-pager {
+  border: 1px solid #dfd7ca;
+  background-color: #f8f5f0;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
