@@ -65,7 +65,26 @@ h2 {
   margin-top: 2rem;
 }
 
+.region-content {
+  margin-top: 3rem;
+}
+
 .region-sidebar-second {
   padding-left: 1rem;
   padding-top: 5rem;
+}
+
+blockquote {
+  margin-left: 2rem;
+  background-color: #d0cac0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+blockquote p {
+  margin-bottom: 0.3em;
+}
+
+#block-views-block-content-recent-block-1 h2 {
+  margin-bottom: 1rem;
 }
