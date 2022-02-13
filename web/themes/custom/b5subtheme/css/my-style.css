@@ -18,6 +18,18 @@ a:hover {
   }
 }
 
+h2 {
+  font-size: calc(0.75rem + 1.7vw);
+  font-weight: 300;
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .breadcrumb {
   border: none;
   background-color: var(--bs-body-bg);
@@ -37,9 +49,23 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.book-navigation {
+  display: none;
+}
+
 .region-footer {
   margin-top: 3rem;
   padding: 2rem;
   background-color: rgb(248, 245, 240);
   text-align: center;
+}
+
+.form-search.form-control {
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.region-sidebar-second {
+  padding-left: 1rem;
+  padding-top: 5rem;
 }
