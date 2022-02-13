@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - comment
     - search
     - system
 _core:
@@ -13,7 +12,6 @@ label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'search content'
   - 'view files'

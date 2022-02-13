@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - comment
     - search
     - system
 _core:
@@ -13,10 +12,8 @@ label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'search content'
-  - 'skip comment approval'
   - 'use media wysiwyg'
   - 'use text format filtered_html'
   - 'view files'

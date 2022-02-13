@@ -1,0 +1,24 @@
+uuid: 1386c58d-8cc1-4125-9571-1f1b485e2f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - views
+  theme:
+    - b5subtheme
+id: views_block__content_recent_block_1
+theme: b5subtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:content_recent-block_1'
+settings:
+  id: 'views_block:content_recent-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

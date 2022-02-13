@@ -13,12 +13,7 @@ module:
   ckeditor: 0
   coffee: 0
   color: 0
-  comment: 0
   config: 0
-  config_devel: 0
-  config_filter: 0
-  config_split: 0
-  contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -41,11 +36,6 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  migrate_upgrade: 0
   node: 0
   options: 0
   page_cache: 0
@@ -58,7 +48,6 @@ module:
   taxonomy: 0
   text: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_ui: 0

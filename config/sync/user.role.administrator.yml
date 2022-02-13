@@ -7,11 +7,10 @@ dependencies:
     - node.type.article
     - node.type.page
   module:
+    - backup_migrate
     - block
     - book
     - coffee
-    - comment
-    - contact
     - contextual
     - filter
     - image
@@ -43,7 +42,6 @@ permissions:
   - 'access backup and migrate'
   - 'access backup files'
   - 'access coffee'
-  - 'access comments'
   - 'access content'
   - 'access content overview'
   - 'access contextual links'
@@ -57,9 +55,7 @@ permissions:
   - 'access printer-friendly version'
   - 'access site in maintenance mode'
   - 'access site reports'
-  - 'access site-wide contact form'
   - 'access toolbar'
-  - 'access user contact forms'
   - 'access user profiles'
   - 'add content to books'
   - admin_classes
@@ -74,8 +70,6 @@ permissions:
   - 'administer breadcrumbs'
   - 'administer code per node'
   - 'administer coffee'
-  - 'administer comments'
-  - 'administer contact forms'
   - 'administer content types'
   - 'administer contexts'
   - 'administer ctools access ruleset'
@@ -171,7 +165,6 @@ permissions:
   - 'edit javascript per node'
   - 'edit own article content'
   - 'edit own audio files'
-  - 'edit own comments'
   - 'edit own document files'
   - 'edit own image files'
   - 'edit own page content'
@@ -182,13 +175,11 @@ permissions:
   - 'manage features'
   - 'node-specific print configuration'
   - 'perform backup'
-  - 'post comments'
   - 'rename features'
   - 'restore from backup'
   - 'revert revisions'
   - 'search content'
   - 'select account cancellation method'
-  - 'skip comment approval'
   - 'switch shortcut sets'
   - 'use advanced search'
   - 'use ctools import'

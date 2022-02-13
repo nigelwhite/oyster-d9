@@ -1,8 +1,0 @@
-uuid: 2472cc32-2420-4609-a010-ae8a1d42946d
-langcode: en
-status: true
-dependencies: {  }
-id: features
-label: Features
-description: 'Menu items for any enabled features.'
-locked: false
