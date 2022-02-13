@@ -34,4 +34,12 @@ a:hover {
   background-color: #f8f5f0;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.region-footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgb(248, 245, 240);
+  text-align: center;
 }
