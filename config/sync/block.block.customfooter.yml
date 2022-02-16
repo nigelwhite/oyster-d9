@@ -1,0 +1,25 @@
+uuid: f0ded476-687d-44d3-8658-f80a9e92dc8b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d467ad1f-c68e-4b5b-a1b3-e821001485dd'
+  module:
+    - block_content
+  theme:
+    - b5subtheme
+id: customfooter
+theme: b5subtheme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d467ad1f-c68e-4b5b-a1b3-e821001485dd'
+settings:
+  id: 'block_content:d467ad1f-c68e-4b5b-a1b3-e821001485dd'
+  label: 'Custom footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
