@@ -23,7 +23,7 @@
         "drupal/coffee": "^1.2",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
-        "drupal/core-recommended": "^9.1",
+        "drupal/core-recommended": "9.3.8",
         "drupal/entity_browser": "^2.6",
         "drupal/field_group": "^3.2",
         "drupal/gin": "3.x-dev@dev",
@@ -39,7 +39,13 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
