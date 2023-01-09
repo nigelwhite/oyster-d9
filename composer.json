@@ -31,6 +31,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui": "^1.4",
         "drupal/libraries": "^3.0@beta",
+        "drupal/views_aggregator": "^2.0",
         "drush/drush": "^10.4"
     },
     "conflict": {
@@ -53,11 +54,7 @@
                 "web-root": "web/"
             }
         },
-        "patches": {
-            "drupal/core": {
-                "Add an option to display the top level page in BookNavigationBlock": "https://www.drupal.org/files/issues/2020-12-17/2827910-43.patch"
-            }
-        },
+        "patches": {},
         "enable-patching": true,
         "composer-exit-on-patch-failure": true,
         "installer-paths": {
